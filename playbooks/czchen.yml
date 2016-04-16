@@ -2,6 +2,8 @@
 -   hosts: '{{ hosts }}'
     become: true
     become_user: root
+    vars:
+        ppa_ubuntu_codename: xenial
 
     roles:
         -   atom
