@@ -1,48 +1,11 @@
-#!/usr/bin/env python3
-import argparse
-import subprocess
-import sys
+#!/bin/bash
+set -u
+set -e
 
+CONFIG=/etc/ca-certificates.conf
 
-def get_args():
-    parser = argparse.ArgumentParser(
-        description='Remove ca-certificates in Debian'
-    )
-    parser.add_argument(
-        metavar='certificate', dest='remove_crts', type=str, nargs='+',
-        help='Certificates to remove from system.')
-    return parser.parse_args()
+for remove in $@; do
+    sed -i "s,^$remove,!$remove," $CONFIG
+done
 
-
-def find_enable_crts():
-    res = subprocess.check_output(
-        ['debconf-show', 'ca-certificates']).decode('utf-8')
-    line = next(filter(
-        lambda x: x.find('ca-certificates/enable_crts') != -1,
-        res.split('\n')))
-    line = line.split(':')[1]
-    crts = map(lambda x: x.strip(), line.split(','))
-    return crts
-
-
-def set_enable_crts(crts):
-    pass
-
-
-def main():
-    args = get_args()
-
-    new_crts = find_enable_crts()
-    origin_crts = set(new_crts)
-
-    for remove_crt in args.remove_crts:
-        new_crts = filter(
-            lambda x: x.find(remove_crt) == -1,
-            new_crts)
-
-    if origin_crts != set(new_crts):
-        set_enable_crts(new_crts)
-
-
-if __name__ == '__main__':
-    sys.exit(main())
+sudo update-ca-certificates
