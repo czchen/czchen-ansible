@@ -4,8 +4,12 @@
     become_user: root
     vars:
         ppa_ubuntu_codename: xenial
+        debian_repo: http://httpredir.debian.org/debian/
+        debian_debug_repo: http://debug.mirrors.debian.org/debian-debug/
+        debian_suite: main contrib non-free
 
     roles:
+        -   debian
         -   security
         -   atom
         -   syncthing
