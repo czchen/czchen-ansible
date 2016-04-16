@@ -10,3 +10,7 @@
             question: unattended-upgrades/enable_auto_updates
             value: true
             vtype: boolean
+        -   name: ca-certificates
+            question: ca-certificates/trust_new_crts
+            value: ask
+            vtype: string
