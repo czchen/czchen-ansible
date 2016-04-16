@@ -1,3 +1,3 @@
-# ansible-czchen
+# czchen-ansible
 
 czchen environment setup script.
