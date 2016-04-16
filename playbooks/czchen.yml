@@ -6,5 +6,6 @@
         ppa_ubuntu_codename: xenial
 
     roles:
+        -   security
         -   atom
         -   syncthing
