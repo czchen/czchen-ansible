@@ -1,0 +1,75 @@
+---
+
+# FIXME: use apt_repository when it supports multiple lines and filename
+-   copy:
+        dest: /etc/apt/sources.list
+        content: |
+            # This file is managed by Ansible. DO NOT EDIT.
+
+            deb {{ debian_repo }} unstable {{ debian_suite }}
+            deb-src {{ debian_repo }} unstable {{ debian_suite }}
+
+            deb {{ debian_debug_repo }} unstable-debug {{ debian_suite }}
+
+            deb {{ debian_repo }} experimental {{ debian_suite }}
+            deb-src {{ debian_repo }} experimental {{ debian_suite }}
+
+            deb {{ debian_debug_repo }} experimental-debug {{ debian_suite }}
+
+-   apt:
+        name: '{{ item.name }}'
+
+    with_items:
+        -   name: afl
+        -   name: apt-file
+        -   name: apt-listchanges
+        -   name: apt-transport-https
+        -   name: autoconf
+        -   name: automake
+        -   name: autopkgtest
+        -   name: ben
+        -   name: blktrace
+        -   name: build-essential
+        -   name: cabal-install
+        -   name: check-all-the-things
+        -   name: cmake
+        -   name: cme
+        -   name: debdelta
+        -   name: debhelper
+        -   name: debian-goodies
+        -   name: debmake
+        -   name: devscripts
+        -   name: dh-autoreconf
+        -   name: dh-make
+        -   name: dput-ng
+        -   name: dstat
+        -   name: exuberant-ctags
+        -   name: ghc
+        -   name: git
+        -   name: git-buildpackage
+        -   name: git-dpm
+        -   name: glibc-doc
+        -   name: glibc-doc-reference
+        -   name: how-can-i-help
+        -   name: libghc-hspec-dev
+        -   name: libtool
+        -   name: libvirt-bin
+        -   name: lxc
+        -   name: manpages
+        -   name: manpages-dev
+        -   name: manpages-posix
+        -   name: manpages-posix-dev
+        -   name: net-tools
+        -   name: pinfo
+        -   name: quilt
+        -   name: sbt
+        -   name: sbuild
+        -   name: sublime-text-installer
+        -   name: sysdig
+        -   name: sysstat
+        -   name: texinfo
+        -   name: tig
+        -   name: tiptop
+        -   name: ubuntu-dev-tools
+        -   name: valgrind
+        -   name: virt-manager

@@ -11,5 +11,6 @@
     roles:
         -   debian
         -   security
+        -   developer
         -   atom
         -   syncthing
