@@ -9,7 +9,7 @@
         debian_suite: main contrib non-free
 
     roles:
-        -   debian
+        -   debian-base
         -   security
         -   developer
         -   atom
