@@ -12,5 +12,7 @@
         -   debian-base
         -   security
         -   developer
+
         -   atom
+        -   google-chrome
         -   syncthing
