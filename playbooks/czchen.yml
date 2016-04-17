@@ -5,6 +5,7 @@
     vars:
         ppa_ubuntu_codename: xenial
         gitlab_debian_codename: jessie
+        apt_keyserver: pool.sks-keyservers.net
         debian_repo: http://httpredir.debian.org/debian/
         debian_debug_repo: http://debug.mirrors.debian.org/debian-debug/
         debian_suite: main contrib non-free
@@ -15,6 +16,7 @@
         -   developer
 
         -   atom
+        -   dropbox
         -   gitlab
         -   google-chrome
         -   syncthing
