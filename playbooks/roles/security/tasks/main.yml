@@ -5,6 +5,7 @@
         question: '{{ item.question }}'
         value: '{{ item.value }}'
         vtype: '{{ item.vtype }}'
+
     with_items:
         -   name: unattended-upgrades
             question: unattended-upgrades/enable_auto_updates
