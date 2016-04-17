@@ -15,3 +15,97 @@
             deb-src {{ debian_repo }} experimental {{ debian_suite }}
 
             deb {{ debian_debug_repo }} experimental-debug {{ debian_suite }}
+
+-   apt:
+        name: '{{ item.name }}'
+
+    with_items:
+        -   name: apparmor
+        -   name: apparmor-notify
+        -   name: apparmor-utils
+
+        -   name: apt-file
+        -   name: apt-listchanges
+        -   name: apt-transport-https
+        -   name: autopkgtest
+        -   name: ben
+        -   name: check-all-the-things
+        -   name: cme
+        -   name: debdelta
+        -   name: debhelper
+        -   name: debian-goodies
+        -   name: debmake
+        -   name: devscripts
+        -   name: dh-autoreconf
+        -   name: dh-make
+        -   name: dput-ng
+        -   name: git-buildpackage
+        -   name: how-can-i-help
+        -   name: quilt
+        -   name: ubuntu-dev-tools
+
+        -   name: afl
+        -   name: atom
+        -   name: autoconf
+        -   name: automake
+        -   name: blktrace
+        -   name: build-essential
+        -   name: cabal-install
+        -   name: charles-proxy
+        -   name: cmake
+        -   name: dstat
+        -   name: exuberant-ctags
+        -   name: freemind
+        -   name: ghc
+        -   name: git
+        -   name: glibc-doc
+        -   name: glibc-doc-reference
+        -   name: libghc-hspec-dev
+        -   name: libtool
+        -   name: libvirt-bin
+        -   name: lxc
+        -   name: manpages
+        -   name: manpages-dev
+        -   name: manpages-posix
+        -   name: manpages-posix-dev
+        -   name: net-tools
+        -   name: pinfo
+        -   name: sbt
+        -   name: sbuild
+        -   name: sublime-text-installer
+        -   name: sysdig
+        -   name: sysstat
+        -   name: texinfo
+        -   name: tig
+        -   name: tiptop
+        -   name: valgrind
+        -   name: virt-manager
+
+        -   name: playonlinux
+        -   name: font-manager
+
+        -   name: fonts-noto
+        -   name: fonts-noto-cjk
+
+        -   name: gnupg2
+        -   name: signing-party
+        -   name: ibus-chewing
+        -   name: autojump
+        -   name: dropbox
+        -   name: goobook
+        -   name: google-chrome-stable
+        -   name: google-talkplugin
+        -   name: gufw
+        -   name: mutt-patched
+        -   name: p7zip-full
+        -   name: pass
+        -   name: picard
+        -   name: sudo
+        -   name: taskwarrior
+        -   name: tmux
+        -   name: tree
+        -   name: vim-gnome
+        -   name: vit
+        -   name: yadm
+        -   name: zgen
+        -   name: zsh
