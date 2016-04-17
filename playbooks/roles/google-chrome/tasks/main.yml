@@ -6,7 +6,7 @@
         url: https://dl.google.com/linux/linux_signing_key.pub
 
 -   copy:
-        dest: /etc/apt/sources.list.d/google-chrome-stable.list
+        dest: /etc/apt/sources.list.d/google-chrome.list
         content: |
             # This file is managed by Ansible. DO NOT EDIT.
 
