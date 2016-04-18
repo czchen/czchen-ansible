@@ -13,6 +13,12 @@
             deb https://packages.gitlab.com/runner/gitlab-ci-multi-runner/debian/ {{ gitlab_debian_codename }} main
             deb-src https://packages.gitlab.com/runner/gitlab-ci-multi-runner/debian/ {{ gitlab_debian_codename }} main
 
+    register: apt_repository
+
+-   apt:
+        update_cache: yes
+    when: apt_repository.get('src') != None
+
 -   apt:
         name: '{{ item.name }}'
 

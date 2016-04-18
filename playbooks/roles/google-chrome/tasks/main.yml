@@ -12,5 +12,11 @@
 
             deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
 
+    register: apt_repository
+
+-   apt:
+        update_cache: yes
+    when: apt_repository.get('src') != None
+
 -   apt:
         name: google-chrome-stable

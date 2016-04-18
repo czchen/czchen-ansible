@@ -12,5 +12,11 @@
 
             deb http://www.charlesproxy.com/packages/apt/ charles-proxy main
 
+    register: apt_repository
+
+-   apt:
+        update_cache: yes
+    when: apt_repository.get('src') != None
+
 -   apt:
         name: charles-proxy

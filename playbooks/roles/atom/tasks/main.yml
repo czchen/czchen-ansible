@@ -14,5 +14,11 @@
             deb http://ppa.launchpad.net/webupd8team/atom/ubuntu {{ ppa_ubuntu_codename }} main
             deb-src http://ppa.launchpad.net/webupd8team/atom/ubuntu {{ ppa_ubuntu_codename }} main
 
+    register: apt_repository
+
+-   apt:
+        update_cache: yes
+    when: apt_repository.get('src') != None
+
 -   apt:
         name: atom

@@ -13,5 +13,11 @@
             deb http://linux.dropbox.com/debian {{ ansible_lsb.codename }} main
             deb-src http://linux.dropbox.com/debian {{ ansible_lsb.codename }} main
 
+    register: apt_repository
+
+-   apt:
+        update_cache: yes
+    when: apt_repository.get('src') != None
+
 -   apt:
         name: dropbox
