@@ -46,6 +46,8 @@
 
 -   apt:
         name: '{{ item.name }}'
+        state: '{{ item.state | default("present") }}'
+        purge: yes
 
     with_items:
         -   name: playonlinux
@@ -59,12 +61,10 @@
         -   name: ibus-chewing
         -   name: autojump
         -   name: goobook
-        -   name: google-talkplugin
         -   name: gufw
         -   name: mutt-patched
         -   name: p7zip-full
         -   name: pass
-        -   name: picard
         -   name: sudo
         -   name: taskwarrior
         -   name: tmux
@@ -74,3 +74,9 @@
         -   name: yadm
         -   name: zgen
         -   name: zsh
+
+        -   name: google-talkplugin
+            state: absent
+
+        -   name: picard
+            state: absent
