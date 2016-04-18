@@ -10,8 +10,8 @@
         content: |
             # This file is managed by Ansible. DO NOT EDIT.
 
-            deb https://packages.gitlab.com/runner/gitlab-ci-multi-runner/debian/ {{ gitlab_debian_codename }} main
-            deb-src https://packages.gitlab.com/runner/gitlab-ci-multi-runner/debian/ {{ gitlab_debian_codename }} main
+            deb https://packages.gitlab.com/runner/gitlab-ci-multi-runner/debian/ {{ stable_debian_codename }} main
+            deb-src https://packages.gitlab.com/runner/gitlab-ci-multi-runner/debian/ {{ stable_debian_codename }} main
 
     register: apt_repository
 
