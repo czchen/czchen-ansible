@@ -47,6 +47,7 @@
         -   name: quilt
         -   name: sbt
         -   name: sbuild
+        -   name: silversearcher-ag
         -   name: sublime-text-installer
         -   name: sysdig
         -   name: sysstat
