@@ -1,21 +1,5 @@
 ---
 
-# FIXME: use apt_repository when it supports multiple lines and filename
--   copy:
-        dest: /etc/apt/sources.list
-        content: |
-            # This file is managed by Ansible. DO NOT EDIT.
-
-            deb {{ debian_repo }} unstable {{ debian_suite }}
-            deb-src {{ debian_repo }} unstable {{ debian_suite }}
-
-            deb {{ debian_debug_repo }} unstable-debug {{ debian_suite }}
-
-            deb {{ debian_repo }} experimental {{ debian_suite }}
-            deb-src {{ debian_repo }} experimental {{ debian_suite }}
-
-            deb {{ debian_debug_repo }} experimental-debug {{ debian_suite }}
-
 -   copy:
         dest: '{{ item.dest }}'
         owner: root
@@ -43,6 +27,28 @@
             # This file is managed by Ansible. DO NOT EDIT.
 
             SUBSYSTEM=="usb", ATTR{idVendor}=="18d1", TAG+="uaccess"
+
+# FIXME: use apt_repository when it supports multiple lines and filename
+-   copy:
+        dest: /etc/apt/sources.list
+        content: |
+            # This file is managed by Ansible. DO NOT EDIT.
+
+            deb {{ debian_repo }} unstable {{ debian_suite }}
+            deb-src {{ debian_repo }} unstable {{ debian_suite }}
+
+            deb {{ debian_debug_repo }} unstable-debug {{ debian_suite }}
+
+            deb {{ debian_repo }} experimental {{ debian_suite }}
+            deb-src {{ debian_repo }} experimental {{ debian_suite }}
+
+            deb {{ debian_debug_repo }} experimental-debug {{ debian_suite }}
+
+    register: apt_repository
+
+-   apt:
+        update_cache: yes
+    when: apt_repository.get('src') != None
 
 -   apt:
         name: '{{ item.name }}'
