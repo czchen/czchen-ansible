@@ -36,7 +36,6 @@
         -   name: how-can-i-help
         -   name: libghc-hspec-dev
         -   name: libtool
-        -   name: libvirt-bin
         -   name: lxc
         -   name: manpages
         -   name: manpages-dev
@@ -45,10 +44,8 @@
         -   name: net-tools
         -   name: pinfo
         -   name: quilt
-        -   name: sbt
         -   name: sbuild
         -   name: silversearcher-ag
-        -   name: sublime-text-installer
         -   name: sysdig
         -   name: sysstat
         -   name: texinfo
