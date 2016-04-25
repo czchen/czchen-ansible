@@ -1,7 +1,7 @@
 image: debian:sid
 
 before_script:
-    -   apt-get update -qq && apt-get install -y -qq ansible
+    -   apt-get update -qq && apt-get install -y -qq ansible lsb-release
 
 job_deploy:
    script: ansible-playbook --extra-vars="hosts=localhost" playbooks/czchen.yml
