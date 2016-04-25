@@ -36,7 +36,6 @@
         -   name: how-can-i-help
         -   name: libghc-hspec-dev
         -   name: libtool
-        -   name: libvirt-bin
         -   name: lxc
         -   name: manpages
         -   name: manpages-dev
