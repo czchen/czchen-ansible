@@ -78,6 +78,7 @@
         -   name: gnupg2
         -   name: signing-party
         -   name: ibus-chewing
+        -   name: lsb-release
         -   name: autojump
         -   name: goobook
         -   name: gufw
