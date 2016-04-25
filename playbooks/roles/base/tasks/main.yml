@@ -72,17 +72,18 @@
         -   name: p7zip-full
         -   name: pass
         -   name: sudo
-        -   name: taskwarrior
         -   name: tmux
         -   name: tree
         -   name: vim-gnome
-        -   name: vit
         -   name: yadm
         -   name: zgen
         -   name: zsh
 
         -   name: google-talkplugin
             state: absent
-
         -   name: picard
+            state: absent
+        -   name: taskwarrior
+            state: absent
+        -   name: vit
             state: absent
