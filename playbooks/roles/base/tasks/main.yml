@@ -1,5 +1,18 @@
 ---
 
+-   file:
+        dest: '{{ item.dest }}'
+        owner: root
+        group: root
+        mode: '{{ item.mode | default("0755") }}'
+        state: directory
+
+    with_items:
+        -   dest: /etc/sudoers.d
+        -   dest: /etc/sysctl.d
+        -   dest: /etc/udev/rules.d
+        -   dest: /etc/apt/sources.list.d
+
 -   copy:
         dest: '{{ item.dest }}'
         owner: root
