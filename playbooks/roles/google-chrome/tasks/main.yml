@@ -3,7 +3,9 @@
 # https://www.google.com.tw/linuxrepositories/
 
 -   apt_key:
-        url: https://dl.google.com/linux/linux_signing_key.pub
+        #url: https://dl.google.com/linux/linux_signing_key.pub
+        id: EB4C1BFD4F042F6DDDCCEC917721F63BD38B4796
+        keyserver: '{{ apt_keyserver }}'
 
 -   copy:
         dest: /etc/apt/sources.list.d/google-chrome.list
