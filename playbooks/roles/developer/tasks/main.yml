@@ -44,6 +44,7 @@
         -   name: net-tools
         -   name: pinfo
         -   name: quilt
+        -   name: ratt
         -   name: sbuild
         -   name: silversearcher-ag
         -   name: sysdig
