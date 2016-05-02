@@ -15,6 +15,7 @@
         -   name: build-essential
         -   name: cabal-install
         -   name: check-all-the-things
+        -   name: cloc
         -   name: cmake
         -   name: cme
         -   name: debdelta
