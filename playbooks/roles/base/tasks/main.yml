@@ -46,16 +46,13 @@
         dest: /etc/apt/sources.list
         content: |
             # This file is managed by Ansible. DO NOT EDIT.
+            {% for distribution in debian.distribution %}
+            deb {{ debian_repo }} {{ distribution }} {{ debian_suite }}
+            deb-src {{ debian_repo }} {{ distribution}} {{ debian_suite }}
 
-            deb {{ debian_repo }} unstable {{ debian_suite }}
-            deb-src {{ debian_repo }} unstable {{ debian_suite }}
+            deb {{ debian_debug_repo }} {{ distribution}}-debug {{ debian_suite }}
+            {% endfor %}
 
-            deb {{ debian_debug_repo }} unstable-debug {{ debian_suite }}
-
-            deb {{ debian_repo }} experimental {{ debian_suite }}
-            deb-src {{ debian_repo }} experimental {{ debian_suite }}
-
-            deb {{ debian_debug_repo }} experimental-debug {{ debian_suite }}
 
     register: apt_repository
 

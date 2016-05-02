@@ -9,6 +9,10 @@
         debian_repo: http://httpredir.debian.org/debian/
         debian_debug_repo: http://debug.mirrors.debian.org/debian-debug/
         debian_suite: main contrib non-free
+        debian:
+            distribution:
+                -   unstable
+                -   experimental
 
     roles:
         -   base
