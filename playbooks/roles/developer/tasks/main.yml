@@ -46,6 +46,7 @@
         -   name: pinfo
         -   name: quilt
         -   name: ratt
+        -   name: reptyr
         -   name: sbuild
         -   name: silversearcher-ag
         -   name: sysdig
