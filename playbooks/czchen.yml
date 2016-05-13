@@ -11,8 +11,9 @@
             debug_repository: http://debug.mirrors.debian.org/debian-debug/
             suite: main contrib non-free
             distribution:
-                -   unstable
                 -   experimental
+                -   unstable
+                -   testing
 
 
     roles:
