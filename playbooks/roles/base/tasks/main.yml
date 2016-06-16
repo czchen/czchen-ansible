@@ -82,6 +82,7 @@
         -   name: pass
         -   name: playonlinux
         -   name: signing-party
+        -   name: snapd
         -   name: sudo
         -   name: tmux
         -   name: tree
