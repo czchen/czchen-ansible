@@ -1,0 +1,22 @@
+---
+
+# http://apt.syncthing.net/
+
+-   apt_key:
+        url: https://syncthing.net/release-key.txt
+
+-   copy:
+        dest: /etc/apt/sources.list.d/syncthing.list
+        content: |
+            # This file is managed by Ansible. DO NOT EDIT.
+
+            deb http://apt.syncthing.net/ syncthing release
+
+    register: apt_repository
+
+-   apt:
+        update_cache: yes
+    when: apt_repository.get('src') != None
+
+-   apt:
+        name: syncthing
