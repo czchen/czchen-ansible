@@ -51,7 +51,6 @@
         -   name: rr
         -   name: ruby-ronn
         -   name: sbuild
-        -   name: sift
         -   name: silversearcher-ag
         -   name: sysdig
         -   name: sysstat
