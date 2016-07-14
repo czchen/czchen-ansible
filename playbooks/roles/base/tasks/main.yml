@@ -59,7 +59,7 @@
             deb-src {{ debian.repository }} {{ distribution }} {{ debian.suite }}
             {% endfor %}
 
-            {% for distribution in debian.distribution %}
+            {% for distribution in debian.distribution if distribution != "stable" %}
             deb {{ debian.debug_repository }} {{ distribution }}-debug {{ debian.suite }}
             {% endfor %}
 
