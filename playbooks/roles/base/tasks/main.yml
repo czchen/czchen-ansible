@@ -41,13 +41,6 @@
 
             SUBSYSTEM=="usb", ATTR{idVendor}=="18d1", TAG+="uaccess"
 
-    -   dest: /etc/systemd/system/docker.service.d/storage-driver.conf
-        content: |
-            # This file is managed by Ansible. DO NOT EDIT.
-
-            [Service]
-            Environment="DOCKER_OPTS=\"--storage-driver=overlay\""
-
 # FIXME: use apt_repository when it supports multiple lines and filename
 -   copy:
         dest: /etc/apt/sources.list
