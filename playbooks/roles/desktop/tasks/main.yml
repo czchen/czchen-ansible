@@ -1,0 +1,12 @@
+---
+
+-   apt:
+        name: '{{ item.name }}'
+        state: '{{ item.state | default("present") }}'
+        purge: yes
+
+    with_items:
+        -   name: font-manager
+        -   name: network-manager-pptp # for VPN
+        -   name: playonlinux
+        -   name: shutter
