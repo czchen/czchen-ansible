@@ -6,6 +6,7 @@
         purge: yes
 
     with_items:
+        -   name: fcitx-chewing
         -   name: font-manager
         -   name: network-manager-pptp # for VPN
         -   name: playonlinux

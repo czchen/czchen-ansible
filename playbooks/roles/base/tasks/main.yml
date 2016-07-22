@@ -74,7 +74,6 @@
         -   name: gnupg2
         -   name: goobook
         -   name: gufw
-        -   name: ibus-chewing
         -   name: lsb-release
         -   name: mutt-patched
         -   name: p7zip-full
