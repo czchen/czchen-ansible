@@ -75,8 +75,8 @@
         -   name: goobook
         -   name: gufw
         -   name: lsb-release
-        -   name: mutt-patched
         -   name: msmtp
+        -   name: mutt
         -   name: p7zip-full
         -   name: pass
         -   name: signing-party
