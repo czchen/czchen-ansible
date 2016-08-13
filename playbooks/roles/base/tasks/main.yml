@@ -76,6 +76,7 @@
         -   name: gufw
         -   name: lsb-release
         -   name: mutt-patched
+        -   name: msmtp
         -   name: p7zip-full
         -   name: pass
         -   name: signing-party
