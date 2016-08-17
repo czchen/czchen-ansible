@@ -85,5 +85,5 @@
         -   name: tree
         -   name: vim-gnome
         -   name: yadm
-        -   name: zgen
+        -   name: zplug
         -   name: zsh
