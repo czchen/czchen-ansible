@@ -68,7 +68,6 @@
         purge: yes
 
     with_items:
-        -   name: autojump
         -   name: fonts-noto
         -   name: fonts-noto-cjk
         -   name: gnupg2
