@@ -83,7 +83,7 @@
         -   name: sudo
         -   name: tmux
         -   name: tree
-        -   name: vim-gnome
+        -   name: vim-nox
         -   name: yadm
         -   name: zplug
         -   name: zsh
