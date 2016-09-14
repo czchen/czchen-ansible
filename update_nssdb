@@ -2,21 +2,12 @@
 set -e
 set -u
 
-NSSDB_PATH=sql:${HOME}/.pki/nssdb
+NSSDB=sql:${HOME}/.pki/nssdb
+CRT_DIR="revoked_certificates"
 
-BAD_CA_NAMES=(
-    "CA WoSign ECC Root"
-    "Certification Authority of WoSign G2"
-    "CNNIC ROOT"
-    "StartCom Certification Authority"
-    "StartCom Certification Authority"
-    "StartCom Certification Authority G2"
-    "WoSign"
-    "WoSign China"
-)
-
-for ca_name in "${BAD_CA_NAMES[@]}"; do
-    certutil -d ${NSSDB_PATH} -M -n "${ca_name}" -t p,p,p
+for crt in ${CRT_DIR}/*.crt; do
+    name=$(basename ${crt})
+    certutil -d ${NSSDB} -A -n ${name} -t p,p,p -i ${crt}
 done
 
-certutil -L -d ${NSSDB_PATH}
+certutil -L -d ${NSSDB}
