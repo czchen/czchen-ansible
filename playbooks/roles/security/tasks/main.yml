@@ -16,6 +16,7 @@
             value: ask
             vtype: string
 
+# https://pierrekim.github.io/blog/2016-02-16-why-i-stopped-using-startssl-because-of-qihoo-360.html
 -   script: >
         files/remove-certificates
             mozilla/CA_WoSign_ECC_Root.crt
@@ -24,6 +25,10 @@
             mozilla/CNNIC_ROOT.crt
             mozilla/ePKI_Root_Certification_Authority.crt
             mozilla/Hongkong_Post_Root_CA_1.crt
+            mozilla/StartCom_Certification_Authority_2.crt
+            mozilla/StartCom_Certification_Authority_2.crt
+            mozilla/StartCom_Certification_Authority_G2.crt
+            mozilla/StartCom_Certification_Authority.crt
             mozilla/Taiwan_GRCA.crt
             mozilla/TWCA_Global_Root_CA.crt
             mozilla/TWCA_Root_Certification_Authority.crt
