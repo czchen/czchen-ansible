@@ -83,7 +83,7 @@
         -   name: sudo
         -   name: tmux
         -   name: tree
-        -   name: vim-nox
+        -   name: vim-gtk # For system clipboard
         -   name: yadm
         -   name: zplug
         -   name: zsh
