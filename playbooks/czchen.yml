@@ -7,8 +7,9 @@
         stable_debian_codename: jessie
         apt_keyserver: pool.sks-keyservers.net
         debian:
-            repository: http://httpredir.debian.org/debian/
-            debug_repository: http://debug.mirrors.debian.org/debian-debug/
+            # http://deb.debian.org/
+            repository: http://deb.debian.org/debian/
+            debug_repository: http://deb.debian.org/debian-debug/
             suite: main contrib non-free
             distribution:
                 -   experimental
