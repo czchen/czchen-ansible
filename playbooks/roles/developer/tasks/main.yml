@@ -45,7 +45,9 @@
         -   name: cme
         -   name: debdelta
         -   name: debhelper
+        -   name: debian-archive-keyring
         -   name: debian-goodies
+        -   name: debian-keyring
         -   name: debmake
         -   name: deborphan
         -   name: devscripts
@@ -85,6 +87,7 @@
         -   name: texinfo
         -   name: tig
         -   name: tiptop
+        -   name: ubuntu-archive-keyring
         -   name: ubuntu-dev-tools
         -   name: valgrind
         -   name: virt-manager
