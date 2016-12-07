@@ -1,29 +1,4 @@
 ---
--   file:
-        dest: '{{ item.dest }}'
-        owner: root
-        group: root
-        mode: '{{ item.mode | default("0755") }}'
-        state: directory
-
-    with_items:
-        -   dest: /etc/systemd/system/docker.service.d
-
--   copy:
-        dest: '{{ item.dest }}'
-        owner: root
-        group: root
-        mode: '{{ item.mode | default("0644") }}'
-        content: '{{ item.content }}'
-
-    with_items:
-    -   dest: /etc/systemd/system/docker.service.d/storage-driver.conf
-        content: |
-            # This file is managed by Ansible. DO NOT EDIT.
-
-            [Service]
-            Environment="DOCKER_OPTS=\"--storage-driver=overlay\""
-
 -   apt:
         name: '{{ item.name }}'
 
