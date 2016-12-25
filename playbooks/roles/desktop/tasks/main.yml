@@ -8,7 +8,8 @@
     with_items:
         -   name: fcitx-chewing
         -   name: font-manager
-        -   name: network-manager-openvpn-gnome
-        -   name: network-manager-pptp # for VPN
+        # -   name: network-manager-openvpn-gnome
+        # -   name: network-manager-pptp # for VPN
         -   name: playonlinux
         -   name: shutter
+        -   name: wicd
