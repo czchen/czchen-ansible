@@ -6,18 +6,12 @@
         id: 1C61A2656FB57B7E4DE0F4C1FC918B335044912E
         keyserver: '{{ apt_keyserver }}'
 
--   copy:
-        dest: /etc/apt/sources.list.d/dropbox.list
-        content: |
-            # This file is managed by Ansible. DO NOT EDIT.
-            deb http://linux.dropbox.com/debian {{ ansible_lsb.codename }} main
-            deb-src http://linux.dropbox.com/debian {{ ansible_lsb.codename }} main
-
-    register: apt_repository
-
--   apt:
-        update_cache: yes
-    when: apt_repository.get('src') != None
+-   apt_repository:
+        repo: '{{ item }}'
+        filename: dropbox
+    with_items:
+        -   'deb http://linux.dropbox.com/debian {{ ansible_lsb.codename }} main'
+        -   'deb-src http://linux.dropbox.com/debian {{ ansible_lsb.codename }} main'
 
 -   apt:
         name: dropbox
