@@ -50,6 +50,7 @@
         -   name: manpages-posix-dev
         -   name: net-tools
         -   name: nmap
+        -   name: nodejs-legacy
         -   name: pinfo
         -   name: pylama
         -   name: quilt
