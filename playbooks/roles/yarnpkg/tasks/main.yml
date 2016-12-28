@@ -1,0 +1,13 @@
+---
+
+# https://yarnpkg.com/en/docs/install
+
+-   apt_key:
+        url: https://dl.yarnpkg.com/debian/pubkey.gpg
+
+-   apt_repository:
+        repo: deb https://dl.yarnpkg.com/debian/ stable main
+        filename: yarnpkg
+
+-   apt:
+        name: yarn
