@@ -77,6 +77,7 @@
         -   name: msmtp
         -   name: mutt
         -   name: needrestart
+        -   name: ntp
         -   name: p7zip-full
         -   name: pass
         -   name: signing-party
