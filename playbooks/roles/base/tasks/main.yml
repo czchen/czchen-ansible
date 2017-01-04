@@ -73,6 +73,7 @@
         -   name: gnupg2
         -   name: goobook
         -   name: gufw
+        -   name: keychain
         -   name: lsb-release
         -   name: msmtp
         -   name: mutt
