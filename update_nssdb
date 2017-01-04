@@ -4,12 +4,15 @@ set -u
 
 command -v certutil
 
-NSSDB=sql:${HOME}/.pki/nssdb
+NSSPATHS="$(echo ${HOME}/.mozilla/firefox/*.default) ${HOME}/.pki/nssdb"
 CRT_DIR="revoked_certificates"
 
-for crt in ${CRT_DIR}/*.crt; do
-    name=$(basename ${crt})
-    certutil -d ${NSSDB} -A -n ${name} -t p,p,p -i ${crt}
+for nss_path in $NSSPATHS; do
+    for crt in ${CRT_DIR}/*.crt; do
+        name=$(basename ${crt})
+        certutil -d sql:${nss_path} -A -n ${name} -t p,p,p -i ${crt}
+    done
+    echo "===> Certificate in ${nss_path}"
+    certutil -L -d sql:${nss_path}
 done
 
-certutil -L -d ${NSSDB}
