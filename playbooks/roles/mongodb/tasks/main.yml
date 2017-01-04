@@ -6,18 +6,9 @@
         id: 42F3E95A2C4F08279C4960ADD68FA50FEA312927
         keyserver: pool.sks-keyservers.net
 
-# FIXME: use apt_repository when it supports multiple lines and filename
--   copy:
-        dest: /etc/apt/sources.list.d/mongodb.list
-        content: |
-            # This file is managed by Ansible. DO NOT EDIT.
-            deb http://repo.mongodb.org/apt/debian wheezy/mongodb-org/3.2 main
-
-    register: apt_repository
-
--   apt:
-        update_cache: yes
-    when: apt_repository.get('src') != None
+-   apt_repository:
+        repo: deb http://repo.mongodb.org/apt/debian wheezy/mongodb-org/3.2 main
+        filename: mongodb
 
 -   apt:
         name: '{{ item.name }}'
