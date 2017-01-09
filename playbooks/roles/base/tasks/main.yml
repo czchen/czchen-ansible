@@ -81,6 +81,7 @@
         -   name: ntp
         -   name: p7zip-full
         -   name: pass
+        -   name: scdaemon
         -   name: signing-party
         -   name: snapd
         -   name: sudo
