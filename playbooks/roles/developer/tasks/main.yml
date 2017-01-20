@@ -37,6 +37,7 @@
         -   name: git-buildpackage
         -   name: git-dpm
         -   name: gitlab-ci-multi-runner
+        -   name: glances
         -   name: glibc-doc
         -   name: glibc-doc-reference
         -   name: how-can-i-help
