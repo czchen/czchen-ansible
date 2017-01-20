@@ -1,7 +1,5 @@
 ---
 
-# https://gitlab.com/gitlab-org/gitlab-ci-multi-runner/blob/master/docs/install/linux-repository.md
-
 -   apt_key:
         id: 1C61A2656FB57B7E4DE0F4C1FC918B335044912E
         keyserver: '{{ apt_keyserver }}'
@@ -10,8 +8,8 @@
         repo: '{{ item }}'
         filename: dropbox
     with_items:
-        -   'deb http://linux.dropbox.com/debian {{ ansible_lsb.codename }} main'
-        -   'deb-src http://linux.dropbox.com/debian {{ ansible_lsb.codename }} main'
+        -   'deb http://linux.dropbox.com/debian sid main'
+        -   'deb-src http://linux.dropbox.com/debian sid main'
 
 -   apt:
         name: dropbox
