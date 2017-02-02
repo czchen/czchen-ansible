@@ -1,2 +1,2 @@
 #!/bin/sh
-ansible-playbook --ask-become-pass --extra-vars="hosts=localhost" playbooks/czchen.yml
+ansible-playbook --ask-become-pass --extra-vars="hosts=localhost" site.yml
