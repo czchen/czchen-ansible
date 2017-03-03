@@ -12,3 +12,7 @@
         -   name: network-manager-pptp # for VPN
         -   name: playonlinux
         -   name: shutter
+
+-   lineinfile:
+        name: /var/lib/dpkg/arch
+        line: 'i386'

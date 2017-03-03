@@ -11,6 +11,7 @@
         -   name: autopkgtest
         -   name: ben
         -   name: blktrace
+        -   name: bmon
         -   name: build-essential
         -   name: cabal-install
         -   name: check-all-the-things
