@@ -5,18 +5,9 @@
 -   apt_key:
         url: http://www.charlesproxy.com/packages/apt/PublicKey
 
--   copy:
-        dest: /etc/apt/sources.list.d/charles-proxy.list
-        content: |
-            # This file is managed by Ansible. DO NOT EDIT.
-
-            deb http://www.charlesproxy.com/packages/apt/ charles-proxy main
-
-    register: apt_repository
-
--   apt:
-        update_cache: yes
-    when: apt_repository.get('src') != None
+-   apt_repository:
+        repo: deb http://www.charlesproxy.com/packages/apt/ charles-proxy main
+        filename: charles-proxy
 
 -   apt:
         name: charles-proxy
