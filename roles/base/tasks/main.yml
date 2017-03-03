@@ -68,6 +68,7 @@
         purge: yes
 
     with_items:
+        -   name: apt-transport-https
         -   name: fonts-noto
         -   name: fonts-noto-cjk
         -   name: gnupg2

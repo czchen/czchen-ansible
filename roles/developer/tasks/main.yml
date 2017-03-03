@@ -6,7 +6,6 @@
         -   name: afl
         -   name: apt-file
         -   name: apt-listchanges
-        -   name: apt-transport-https
         -   name: autoconf
         -   name: automake
         -   name: autopkgtest

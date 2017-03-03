@@ -18,9 +18,3 @@
 -   apt:
         update_cache: yes
     when: apt_repository.get('src') != None
-
--   apt:
-        name: '{{ item.name }}'
-
-    with_items:
-        -   name: apt-transport-https
