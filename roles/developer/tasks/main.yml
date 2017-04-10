@@ -71,3 +71,4 @@
         -   name: virt-manager
         -   name: voltron
         -   name: yamllint
+        -   name: yapf
