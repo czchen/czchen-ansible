@@ -69,6 +69,7 @@
 
     with_items:
         -   name: apt-transport-https
+        -   name: asciinema
         -   name: fonts-noto
         -   name: fonts-noto-cjk
         -   name: gnupg2
