@@ -70,6 +70,7 @@
     with_items:
         -   name: apt-transport-https
         -   name: asciinema
+        -   name: cryfs
         -   name: fonts-noto
         -   name: fonts-noto-cjk
         -   name: gnupg2
@@ -85,6 +86,7 @@
         -   name: pass
         -   name: scdaemon
         -   name: signing-party
+        -   name: sirikali
         -   name: snapd
         -   name: sudo
         -   name: tmux
