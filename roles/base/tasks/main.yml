@@ -76,6 +76,7 @@
         -   name: gnupg2
         -   name: goobook
         -   name: gufw
+        -   name: hopenpgp-tools
         -   name: keychain
         -   name: lsb-release
         -   name: msmtp
