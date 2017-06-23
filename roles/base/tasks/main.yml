@@ -83,6 +83,7 @@
         -   name: needrestart
         -   name: ntp
         -   name: p7zip-full
+        -   name: parcimonie
         -   name: pass
         -   name: scdaemon
         -   name: signing-party
