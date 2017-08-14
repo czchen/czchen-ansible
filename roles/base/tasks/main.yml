@@ -12,6 +12,7 @@
         -   dest: /etc/sysctl.d
         -   dest: /etc/udev/rules.d
         -   dest: /etc/apt/sources.list.d
+        -   dest: /etc/modprobe.d
 
 -   copy:
         dest: '{{ item.dest }}'
@@ -40,6 +41,14 @@
             # This file is managed by Ansible. DO NOT EDIT.
 
             SUBSYSTEM=="usb", ATTR{idVendor}=="18d1", TAG+="uaccess"
+
+    -   dest: /etc/modprobe.d/thinkpad.conf
+        content: |
+            # This file is managed by Ansible. DO NOT EDIT.
+
+            options wilwifi power_save=n
+            options wilmvm power_scheme=1
+
 
 # FIXME: use apt_repository when it supports multiple lines and filename
 -   copy:
