@@ -87,6 +87,7 @@
         -   name: gufw
         -   name: hopenpgp-tools
         -   name: keychain
+        -   name: ledger
         -   name: lsb-release
         -   name: msmtp
         -   name: mutt
