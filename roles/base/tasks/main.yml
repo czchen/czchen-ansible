@@ -101,6 +101,7 @@
         -   name: sirikali
         -   name: snapd
         -   name: sudo
+        -   name: system-config-lvm
         -   name: tmux
         -   name: tree
         -   name: vim-gtk # For system clipboard
