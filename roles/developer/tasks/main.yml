@@ -18,6 +18,7 @@
         -   name: cloc
         -   name: cmake
         -   name: cme
+        -   name: cscope
         -   name: debdelta
         -   name: debhelper
         -   name: debian-archive-keyring
