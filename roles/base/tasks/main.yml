@@ -88,6 +88,7 @@
         -   name: hopenpgp-tools
         -   name: ledger
         -   name: lsb-release
+        -   name: lshw
         -   name: msmtp
         -   name: mutt
         -   name: needrestart
