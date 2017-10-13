@@ -47,7 +47,7 @@
             # This file is managed by Ansible. DO NOT EDIT.
 
             options iwlwifi power_save=n
-            options iwlmvm power_scheme=1
+            options iwldvm power_scheme=1
 
             options iwlwifi 11n_disable=1
 
