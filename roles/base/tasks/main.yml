@@ -42,12 +42,14 @@
 
             SUBSYSTEM=="usb", ATTR{idVendor}=="18d1", TAG+="uaccess"
 
-    -   dest: /etc/modprobe.d/thinkpad.conf
+    -   dest: /etc/modprobe.d/iwlwifi.conf
         content: |
             # This file is managed by Ansible. DO NOT EDIT.
 
-            options wilwifi power_save=n
-            options wilmvm power_scheme=1
+            options iwlwifi power_save=n
+            options iwlmvm power_scheme=1
+
+            options iwlwifi 11n_disable=1
 
 
 # FIXME: use apt_repository when it supports multiple lines and filename
