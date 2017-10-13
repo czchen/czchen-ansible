@@ -86,7 +86,6 @@
         -   name: goobook
         -   name: gufw
         -   name: hopenpgp-tools
-        -   name: keychain
         -   name: ledger
         -   name: lsb-release
         -   name: msmtp
