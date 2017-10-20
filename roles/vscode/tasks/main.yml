@@ -1,0 +1,15 @@
+---
+
+# https://code.visualstudio.com/docs/setup/linux
+
+-   apt_key:
+        url: https://packages.microsoft.com/keys/microsoft.asc
+
+-   apt_repository:
+        repo: '{{ item }}'
+        filename: dropbox
+    with_items:
+        -   'deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main'
+
+-   apt:
+        name: code
