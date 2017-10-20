@@ -7,7 +7,7 @@
 
 -   apt_repository:
         repo: '{{ item }}'
-        filename: dropbox
+        filename: vscode
     with_items:
         -   'deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main'
 
