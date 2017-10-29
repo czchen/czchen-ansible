@@ -59,6 +59,7 @@
         -   name: reptyr
         -   name: rr
         -   name: sbuild
+        -   name: shellcheck
         -   name: silversearcher-ag
         -   name: sysdig
         -   name: sysstat
