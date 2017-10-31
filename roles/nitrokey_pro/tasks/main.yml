@@ -1,0 +1,17 @@
+---
+
+# https://www.nitrokey.com/documentation/installation#p:nitrokey-pro&os:linux
+
+-   apt:
+        name: '{{ item.name }}'
+
+    with_items:
+        -   name: libccid
+        -   name: nitrokey-app
+
+-   copy:
+        src: files/41-nitrokey.rules
+        dest: /etc/udev/rules.d/41-nitrokey.rules
+        owner: root
+        group: root
+        mode: "0644"
