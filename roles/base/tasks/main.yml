@@ -104,6 +104,7 @@
         -   name: system-config-lvm
         -   name: tmux
         -   name: tree
+        -   name: unattended-upgrades
         -   name: vim-gtk # For system clipboard
         -   name: yadm
         -   name: zplug
