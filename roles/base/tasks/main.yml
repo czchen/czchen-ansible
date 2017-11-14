@@ -79,7 +79,6 @@
         purge: yes
 
     with_items:
-        -   name: apt-transport-https
         -   name: asciinema
         -   name: cryfs
         -   name: fonts-noto
