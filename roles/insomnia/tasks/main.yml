@@ -8,8 +8,8 @@
 -   apt_repository:
         repo: '{{ item }}'
         filename: vscode
-        with_items:
-            -   'deb https://dl.bintray.com/getinsomnia/Insomnia /'
+    with_items:
+        -   'deb https://dl.bintray.com/getinsomnia/Insomnia /'
 
 -   apt:
         name: insomnia
