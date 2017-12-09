@@ -9,8 +9,12 @@
     with_items:
         -   name: unattended-upgrades
             question: unattended-upgrades/enable_auto_updates
-            value: true
-            vtype: boolean
+            value: 'true'
+            vtype: string
+        -   name: unattended-upgrades
+            question: unattended-upgrades/origins_pattern
+            value: '"origin=Debian,codename=${distro_codename},label=Debian-Security";'
+            vtype: string
         -   name: ca-certificates
             question: ca-certificates/trust_new_crts
             value: ask
