@@ -36,6 +36,7 @@
         -   name: ghc
         -   name: git
         -   name: git-buildpackage
+        -   name: git-crypt
         -   name: git-dpm
         -   name: gitlab-ci-multi-runner
         -   name: glances
