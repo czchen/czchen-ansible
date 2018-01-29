@@ -30,13 +30,13 @@
             Defaults umask = 0022
             Defaults umask_override
 
-    -   dest: /etc/sysctl.d/sysrq.conf
+    -   dest: /etc/sysctl.d/99-czchen.conf
         content: |
             # This file is managed by Ansible. DO NOT EDIT.
 
             kernel.sysrq = 1
 
-    -   dest: /etc/udev/rules.d/99-android.rules
+    -   dest: /etc/udev/rules.d/99-czchen.rules
         content: |
             # This file is managed by Ansible. DO NOT EDIT.
 
