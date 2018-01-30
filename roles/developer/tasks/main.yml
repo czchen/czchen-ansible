@@ -55,6 +55,7 @@
         -   name: nmap
         -   name: pinfo
         -   name: pylama
+        -   name: python3-venv
         -   name: quilt
         -   name: ratt
         -   name: reptyr
