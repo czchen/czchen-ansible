@@ -57,7 +57,7 @@
 
             # https://forums.puri.sm/t/keyboard-layout-unable-to-recognize-pipe/2022/10
             evdev:atkbd:dmi:bvn*:bvr*:bd*:svnPurism:pnLibrem13v2*
-            KEYBOARD_KEY_56=backslash
+             KEYBOARD_KEY_56=backslash
 
 # FIXME: use apt_repository when it supports multiple lines and filename
 -   copy:
