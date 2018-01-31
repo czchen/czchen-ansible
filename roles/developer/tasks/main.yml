@@ -42,6 +42,7 @@
         -   name: glances
         -   name: glibc-doc
         -   name: glibc-doc-reference
+        -   name: go-dep
         -   name: how-can-i-help
         -   name: jq
         -   name: libghc-hspec-dev
