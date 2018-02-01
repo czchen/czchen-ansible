@@ -18,8 +18,9 @@
                 -   stable
 
     roles:
-        -   base
         -   security
+        -   debian_repository
+        -   base
         -   developer
         -   desktop
 
