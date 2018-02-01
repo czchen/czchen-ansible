@@ -24,6 +24,7 @@
         -   name: debian-archive-keyring
         -   name: debian-goodies
         -   name: debian-keyring
+        -   name: debian-policy
         -   name: debmake
         -   name: deborphan
         -   name: devscripts
