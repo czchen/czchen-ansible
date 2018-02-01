@@ -1,5 +1,6 @@
 ---
--   apt:
+-   name: Install packages for developer
+    apt:
         name: '{{ item.name }}'
 
     with_items:
