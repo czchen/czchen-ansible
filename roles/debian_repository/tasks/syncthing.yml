@@ -1,0 +1,12 @@
+---
+
+# http://apt.syncthing.net/
+
+-   name: syncthing
+    apt_key:
+        url: https://syncthing.net/release-key.txt
+
+-   name: syncthing
+    apt_repository:
+        repo: deb http://apt.syncthing.net/ syncthing release
+        filename: syncthing

@@ -176,6 +176,7 @@
         -   name: tree
         -   name: ubuntu-archive-keyring
         -   name: ubuntu-dev-tools
+        -   name: ubuntu-make
         -   name: unattended-upgrades
         -   name: valgrind
         -   name: vim-gtk # For system clipboard

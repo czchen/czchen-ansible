@@ -1,0 +1,9 @@
+---
+
+# https://launchpad.net/~lyzardking/+archive/ubuntu/ubuntu-make
+
+-   name: ubuntu-make
+    apt_repository:
+        repo: 'ppa:lyzardking/ubuntu-make'
+        codename: '{{ ppa_ubuntu_codename }}'
+        filename: ubuntu-make
