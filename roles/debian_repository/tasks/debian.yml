@@ -1,0 +1,22 @@
+---
+-   name: debian
+    copy:
+        dest: /etc/apt/sources.list
+        content: |
+            # This file is managed by Ansible. DO NOT EDIT.
+
+            {% for distribution in debian.distribution %}
+            deb {{ debian.repository }} {{ distribution }} {{ debian.suite }}
+            deb-src {{ debian.repository }} {{ distribution }} {{ debian.suite }}
+            {% endfor %}
+
+            {% for distribution in debian.distribution %}
+            deb {{ debian.debug_repository }} {{ distribution }}-debug {{ debian.suite }}
+            {% endfor %}
+
+    register: apt_repository
+
+-   name: debian
+    apt:
+        update_cache: yes
+    when: apt_repository.get('src') != None
