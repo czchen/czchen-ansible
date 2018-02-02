@@ -2,3 +2,5 @@
 -   import_tasks: cassandra.yml
 -   import_tasks: charles-proxy.yml
 -   import_tasks: dropbox.yml
+-   import_tasks: git-lfs.yml
+-   import_tasks: gitlab.yml
