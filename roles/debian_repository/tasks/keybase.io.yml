@@ -8,4 +8,4 @@
 -   name: keybase.io
     apt_repository:
         repo: deb http://prerelease.keybase.io/deb stable main
-        filename: vscode
+        filename: keybase.io
