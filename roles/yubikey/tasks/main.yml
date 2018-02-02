@@ -1,9 +1,0 @@
----
-
--   apt:
-        name: '{{ item.name }}'
-        state: '{{ item.state | default("present") }}'
-        purge: yes
-
-    with_items:
-        -   name: scdaemon
