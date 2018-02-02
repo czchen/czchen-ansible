@@ -9,3 +9,4 @@
 -   import_tasks: google-chrome.yml
 -   import_tasks: heroku.yml
 -   import_tasks: insomnia.yml
+-   import_tasks: vscode.yml
