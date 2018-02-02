@@ -2,12 +2,11 @@
 
 # http://www.charlesproxy.com/documentation/installation/apt-repository/
 
--   apt_key:
+-   name: charles-proxy
+    apt_key:
         url: http://www.charlesproxy.com/packages/apt/PublicKey
 
--   apt_repository:
+-   name: charles-proxy
+    apt_repository:
         repo: deb http://www.charlesproxy.com/packages/apt/ charles-proxy main
         filename: charles-proxy
-
--   apt:
-        name: charles-proxy

@@ -6,6 +6,7 @@
         purge: yes
 
     with_items:
+        -   name: dropbox
         -   name: fcitx-chewing
         -   name: font-manager
         -   name: network-manager-openvpn-gnome
