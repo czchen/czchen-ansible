@@ -144,6 +144,7 @@
         -   name: goobook
         -   name: gufw
         -   name: how-can-i-help
+        -   name: insomnia
         -   name: jq
         -   name: ledger
         -   name: libghc-hspec-dev

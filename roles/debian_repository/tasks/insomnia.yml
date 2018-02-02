@@ -1,0 +1,12 @@
+---
+
+# https://insomnia.rest/blog/ubuntu-ppa/
+
+-   name: insomnia
+    apt_key:
+        url: https://insomnia.rest/keys/debian-public.key.asc
+
+-   name: insomnia
+    apt_repository:
+        repo: deb https://dl.bintray.com/getinsomnia/Insomnia /
+        filename: insomnia
