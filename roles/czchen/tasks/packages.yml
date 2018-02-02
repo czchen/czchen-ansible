@@ -1,6 +1,6 @@
 ---
 
--   name: czchen
+-   name: install packages
     apt:
         name: '{{ item.name }}'
         state: '{{ item.state | default("present") }}'
