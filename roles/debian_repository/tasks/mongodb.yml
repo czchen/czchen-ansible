@@ -2,17 +2,12 @@
 
 # https://docs.mongodb.org/manual/tutorial/install-mongodb-on-debian/
 
--   apt_key:
+-   name: mongodb
+    apt_key:
         id: 42F3E95A2C4F08279C4960ADD68FA50FEA312927
-        keyserver: pool.sks-keyservers.net
+        keyserver: '{{ apt_keyserver }}'
 
--   apt_repository:
+-   name: mongodb
+    apt_repository:
         repo: deb http://repo.mongodb.org/apt/debian wheezy/mongodb-org/3.2 main
         filename: mongodb
-
--   apt:
-        name: '{{ item.name }}'
-
-    with_items:
-        -   name: mongodb-org-server
-        -   name: mongodb-org-shell

@@ -1,0 +1,9 @@
+---
+
+# https://launchpad.net/~rael-gc/+archive/ubuntu/scudcloud
+
+-   name: scudcloud
+    apt_repository:
+        repo: 'ppa:rael-gc/scudcloud'
+        codename: '{{ ppa_ubuntu_codename }}'
+        filename: scudcloud

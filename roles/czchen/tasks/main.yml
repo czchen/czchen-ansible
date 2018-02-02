@@ -159,6 +159,7 @@
         -   name: rr
         -   name: sbuild
         -   name: scdaemon
+        -   name: scdaemon
         -   name: shellcheck
         -   name: shutter
         -   name: signing-party
