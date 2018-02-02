@@ -20,19 +20,4 @@
     roles:
         -   security
         -   debian_repository
-        -   base
-        -   developer
-        -   desktop
-
-        -   dropbox
-        -   git-lfs
-        -   google-chrome
-        -   heroku
-        -   insomnia
-        -   keybase.io
-        -   nitrokey_pro
-        -   sbt
-        -   skype
-        -   ubuntu-make
-        -   yarnpkg
-        -   yubikey
+        -   czchen
