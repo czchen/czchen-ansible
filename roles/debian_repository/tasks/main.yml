@@ -5,3 +5,4 @@
 -   import_tasks: git-lfs.yml
 -   import_tasks: gitlab.yml
 -   import_tasks: google-chrome.yml
+-   import_tasks: heroku.yml

@@ -12,6 +12,3 @@
     apt_repository:
         repo: deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
         filename: google-chrome
-    with_items:
-        -   deb https://packages.gitlab.com/runner/gitlab-ci-multi-runner/debian/ {{ stable_debian_codename }} main
-        -   deb-src https://packages.gitlab.com/runner/gitlab-ci-multi-runner/debian/ {{ stable_debian_codename }} main
