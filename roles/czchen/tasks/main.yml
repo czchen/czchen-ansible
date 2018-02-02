@@ -22,7 +22,7 @@
         content: '{{ item.content }}'
 
     with_items:
-    -   dest: /etc/sudoers.d/umask
+    -   dest: /etc/sudoers.d/czchen
         mode: '0400'
         content: |
             # This file is managed by Ansible. DO NOT EDIT.
@@ -30,7 +30,7 @@
             Defaults umask = 0022
             Defaults umask_override
 
-    -   dest: /etc/sysctl.d/99-czchen.conf
+    -   dest: /etc/sysctl.d/czchen.conf
         content: |
             # This file is managed by Ansible. DO NOT EDIT.
 
@@ -42,7 +42,7 @@
 
             SUBSYSTEM=="usb", ATTR{idVendor}=="18d1", TAG+="uaccess"
 
-    -   dest: /etc/modprobe.d/iwlwifi.conf
+    -   dest: /etc/modprobe.d/99-czchen.conf
         content: |
             # This file is managed by Ansible. DO NOT EDIT.
 
