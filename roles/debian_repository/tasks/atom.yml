@@ -1,0 +1,8 @@
+---
+# https://launchpad.net/~webupd8team/+archive/ubuntu/atom
+
+-   name: atom
+    apt_repository:
+        repo: 'ppa:webupd8team/atom'
+        codename: '{{ ppa_ubuntu_codename }}'
+        filename: atom

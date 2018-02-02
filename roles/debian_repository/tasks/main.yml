@@ -1,1 +1,2 @@
+-   import_tasks: atom.yml
 -   import_tasks: cassandra.yml

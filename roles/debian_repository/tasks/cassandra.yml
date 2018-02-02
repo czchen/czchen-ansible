@@ -1,11 +1,11 @@
 ---
 # http://cassandra.apache.org/download/
 
--   name: Add https://www.apache.org/dist/cassandra/KEYS
+-   name: cassandra
     apt_key:
         url: https://www.apache.org/dist/cassandra/KEYS
 
--   name: Add cassandra
+-   name: cassandra
     apt_repository:
         repo: deb http://www.apache.org/dist/cassandra/debian 311x main
         filename: cassandra
