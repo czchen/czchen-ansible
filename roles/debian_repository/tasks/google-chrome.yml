@@ -1,0 +1,17 @@
+---
+
+# https://www.google.com.tw/linuxrepositories/
+
+-   name: google-chrome
+    apt_key:
+        #url: https://dl-ssl.google.com/linux/linux_signing_key.pub
+        id: EB4C1BFD4F042F6DDDCCEC917721F63BD38B4796
+        keyserver: '{{ apt_keyserver }}'
+
+-   name: google-chrome
+    apt_repository:
+        repo: deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
+        filename: google-chrome
+    with_items:
+        -   deb https://packages.gitlab.com/runner/gitlab-ci-multi-runner/debian/ {{ stable_debian_codename }} main
+        -   deb-src https://packages.gitlab.com/runner/gitlab-ci-multi-runner/debian/ {{ stable_debian_codename }} main
