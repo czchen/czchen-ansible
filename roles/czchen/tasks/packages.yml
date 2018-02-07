@@ -59,6 +59,7 @@
         -   name: gnupg2
         -   name: go-dep
         -   name: goobook
+        -   name: graphviz
         -   name: gufw
         -   name: how-can-i-help
         -   name: insomnia
