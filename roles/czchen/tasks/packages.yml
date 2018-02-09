@@ -64,6 +64,7 @@
         -   name: how-can-i-help
         -   name: insomnia
         -   name: jq
+        -   name: kcachegrind
         -   name: keybase
         -   name: ledger
         -   name: libghc-hspec-dev
