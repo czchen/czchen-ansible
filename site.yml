@@ -6,16 +6,6 @@
         ppa_ubuntu_codename: xenial
         stable_debian_codename: jessie
         apt_keyserver: pool.sks-keyservers.net
-        debian:
-            # http://deb.debian.org/
-            repository: http://deb.debian.org/debian/
-            debug_repository: http://deb.debian.org/debian-debug/
-            suite: main contrib non-free
-            distribution:
-                -   experimental
-                -   unstable
-                -   testing
-                -   stable
 
     roles:
         -   security
