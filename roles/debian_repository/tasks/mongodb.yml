@@ -4,10 +4,10 @@
 
 -   name: mongodb
     apt_key:
-        id: 42F3E95A2C4F08279C4960ADD68FA50FEA312927
+        id: 2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
         keyserver: '{{ apt_keyserver }}'
 
 -   name: mongodb
     apt_repository:
-        repo: deb http://repo.mongodb.org/apt/debian wheezy/mongodb-org/3.2 main
+        repo: deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.6 main
         filename: mongodb
