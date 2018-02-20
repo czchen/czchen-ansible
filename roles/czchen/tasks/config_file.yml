@@ -1,6 +1,7 @@
 ---
 
--   file:
+-   name: Create directories for config files
+    file:
         dest: '{{ item.dest }}'
         owner: root
         group: root
@@ -14,7 +15,8 @@
         -   dest: /etc/apt/sources.list.d
         -   dest: /etc/modprobe.d
 
--   copy:
+-   name: Setup config files
+    copy:
         dest: '{{ item.dest }}'
         owner: root
         group: root
@@ -59,6 +61,7 @@
             evdev:atkbd:dmi:bvn*:bvr*:bd*:svnPurism:pnLibrem13v2*
              KEYBOARD_KEY_56=backslash
 
--   lineinfile:
+-   name: Enable i386
+    lineinfile:
         name: /var/lib/dpkg/arch
         line: 'i386'
