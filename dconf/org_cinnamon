@@ -1,0 +1,61 @@
+[/]
+panels-autohide=['1:false', '2:false']
+panels-resizable=['1:false', '2:false']
+panels-scale-text-icons=['1:true', '2:true']
+panels-show-delay=['1:0', '2:0']
+panels-hide-delay=['1:0', '2:0']
+panel-edit-mode=false
+enabled-applets=['panel1:left:0:menu@cinnamon.org:0', 'panel1:left:4:window-list@cinnamon.org:3', 'panel1:right:0:notifications@cinnamon.org:4', 'panel1:right:1:removable-drives@cinnamon.org:6', 'panel1:right:4:keyboard@cinnamon.org:7', 'panel1:right:3:systray@cinnamon.org:12', 'panel1:right:5:sound@cinnamon.org:10', 'panel1:right:6:network@cinnamon.org:9', 'panel1:right:7:power@cinnamon.org:11', 'panel1:right:8:windows-quick-list@cinnamon.org:14', 'panel1:right:9:calendar@cinnamon.org:13', 'panel1:right:10:user@cinnamon.org:5']
+next-applet-id=19
+enabled-desklets=@as []
+panel-launchers=['DEPRECATED']
+desklet-snap-interval=25
+favorite-apps=['nemo.desktop', 'org.gnome.Terminal.desktop', 'google-chrome.desktop', 'firefox-esr.desktop', 'atom.desktop', 'gvim.desktop', 'PlayOnLinux.desktop', 'cinnamon-settings.desktop']
+panels-enabled=['1:0:top']
+panels-height=['1:25', '2:25']
+
+[settings-daemon/plugins/power]
+sleep-display-battery=600
+lid-close-battery-action='suspend'
+sleep-display-ac=600
+lid-close-ac-action='suspend'
+sleep-inactive-ac-timeout=0
+sleep-inactive-battery-timeout=0
+
+[settings-daemon/peripherals/touchpad]
+motion-threshold=1
+motion-acceleration=10.0
+
+[settings-daemon/peripherals/keyboard]
+numlock-state='off'
+
+[settings-daemon/peripherals/mouse]
+drag-threshold=8
+motion-threshold=1
+double-click=400
+
+[desktop/a11y/applications]
+screen-keyboard-enabled=false
+screen-reader-enabled=false
+
+[desktop/a11y/mouse]
+secondary-click-enabled=false
+secondary-click-time=1.2
+dwell-time=1.2
+dwell-threshold=10
+dwell-click-enabled=false
+
+[desktop/background/slideshow]
+image-source='xml:///usr/share/gnome-background-properties/adwaita.xml'
+delay=15
+
+[desktop/interface]
+cursor-size=24
+toolkit-accessibility=false
+
+[desktop/sound]
+event-sounds=false
+
+[desktop/wm/preferences]
+num-workspaces=2
+workspace-names=['Left', 'Right']
