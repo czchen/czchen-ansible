@@ -1,18 +1,38 @@
-[settings-daemon/plugins/xsettings]
-antialiasing='rgba'
-hinting='slight'
-
-[settings-daemon/peripherals/keyboard]
-numlock-state='on'
-
 [/]
+panels-autohide=['1:false', '2:false']
+panels-resizable=['1:false', '2:false']
+panels-scale-text-icons=['1:true', '2:true']
+panels-show-delay=['1:0', '2:0']
+panels-hide-delay=['1:0', '2:0']
 panel-edit-mode=false
-enabled-applets=['panel1:left:0:menu@cinnamon.org:0', 'panel1:left:1:panel-launchers@cinnamon.org:15', 'panel1:left:2:window-list@cinnamon.org:3', 'panel1:right:0:notifications@cinnamon.org:4', 'panel1:right:1:removable-drives@cinnamon.org:6', 'panel1:right:2:power@cinnamon.org:11', 'panel1:right:3:systray@cinnamon.org:12', 'panel1:right:4:keyboard@cinnamon.org:7', 'panel1:right:5:sound@cinnamon.org:10', 'panel1:right:6:network@cinnamon.org:16', 'panel1:right:8:calendar@cinnamon.org:13', 'panel1:right:7:windows-quick-list@cinnamon.org:14', 'panel1:right:10:user@cinnamon.org:5']
-next-applet-id=17
+enabled-applets=['panel1:left:0:menu@cinnamon.org:0', 'panel1:left:4:window-list@cinnamon.org:3', 'panel1:right:0:notifications@cinnamon.org:4', 'panel1:right:1:removable-drives@cinnamon.org:6', 'panel1:right:4:keyboard@cinnamon.org:7', 'panel1:right:3:systray@cinnamon.org:12', 'panel1:right:5:sound@cinnamon.org:10', 'panel1:right:6:network@cinnamon.org:9', 'panel1:right:7:power@cinnamon.org:11', 'panel1:right:8:windows-quick-list@cinnamon.org:14', 'panel1:right:9:calendar@cinnamon.org:13', 'panel1:right:10:user@cinnamon.org:5']
+next-applet-id=19
 enabled-desklets=@as []
 panel-launchers=['DEPRECATED']
-favorite-apps=['nemo.desktop', 'org.gnome.Terminal.desktop', 'google-chrome.desktop', 'firefox-esr.desktop', 'atom.desktop', 'vim.desktop', 'code.desktop', 'steam.desktop', 'cinnamon-settings.desktop']
+desklet-snap-interval=25
+favorite-apps=['nemo.desktop', 'org.gnome.Terminal.desktop', 'google-chrome.desktop', 'firefox-esr.desktop', 'atom.desktop', 'gvim.desktop', 'PlayOnLinux.desktop', 'cinnamon-settings.desktop']
 panels-enabled=['1:0:top']
+panels-height=['1:25', '2:25']
+
+[settings-daemon/plugins/power]
+sleep-display-battery=600
+lid-close-battery-action='suspend'
+sleep-display-ac=600
+lid-close-ac-action='suspend'
+sleep-inactive-ac-timeout=0
+sleep-inactive-battery-timeout=0
+
+[settings-daemon/peripherals/touchpad]
+motion-threshold=1
+motion-acceleration=10.0
+
+[settings-daemon/peripherals/keyboard]
+numlock-state='off'
+
+[settings-daemon/peripherals/mouse]
+drag-threshold=8
+motion-threshold=1
+double-click=400
 
 [desktop/a11y/applications]
 screen-keyboard-enabled=false
@@ -25,26 +45,17 @@ dwell-time=1.2
 dwell-threshold=10
 dwell-click-enabled=false
 
-[desktop/media-handling]
-autorun-x-content-start-app=['x-content/unix-software', 'x-content/bootable-media']
-autorun-x-content-ignore=['x-content/bootable-media']
-autorun-x-content-open-folder=@as []
-
-[desktop/background]
-picture-uri='file:///usr/share/images/desktop-base/desktop-background.xml'
-primary-color='#023c88'
-secondary-color='#5789ca'
+[desktop/background/slideshow]
+image-source='xml:///usr/share/gnome-background-properties/adwaita.xml'
+delay=15
 
 [desktop/interface]
-clock-show-date=true
-font-name='Sans 12'
-first-day-of-week=7
+cursor-size=24
 toolkit-accessibility=false
 
 [desktop/sound]
 event-sounds=false
 
 [desktop/wm/preferences]
-workspace-names=['Left', 'Right']
 num-workspaces=2
-titlebar-font='Sans Bold 12'
+workspace-names=['Left', 'Right']
