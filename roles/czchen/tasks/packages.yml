@@ -46,7 +46,6 @@
         -   name: font-manager
         -   name: fonts-noto
         -   name: fonts-noto-cjk
-        -   name: gcloud
         -   name: ghc
         -   name: git
         -   name: git-buildpackage
@@ -60,6 +59,7 @@
         -   name: gnupg2
         -   name: go-dep
         -   name: goobook
+        -   name: google-cloud-sdk
         -   name: graphviz
         -   name: gufw
         -   name: how-can-i-help
