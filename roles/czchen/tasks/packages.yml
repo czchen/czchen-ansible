@@ -46,6 +46,7 @@
         -   name: font-manager
         -   name: fonts-noto
         -   name: fonts-noto-cjk
+        -   name: gcloud
         -   name: ghc
         -   name: git
         -   name: git-buildpackage
