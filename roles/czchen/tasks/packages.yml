@@ -19,7 +19,6 @@
         -   name: blktrace
         -   name: bmon
         -   name: build-essential
-        -   name: bumpversion
         -   name: cabal-install
         -   name: check-all-the-things
         -   name: cloc
