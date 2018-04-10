@@ -14,7 +14,6 @@
 -   import_tasks: keybase.io.yml
 -   import_tasks: mongodb.yml
 -   import_tasks: sbt.yml
--   import_tasks: scudcloud.yml
 -   import_tasks: skype.yml
 -   import_tasks: sublime-text.yml
 -   import_tasks: syncthing.yml
