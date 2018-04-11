@@ -1,0 +1,12 @@
+---
+
+# https://docs.bazel.build/versions/master/install-ubuntu.html#2-add-bazel-distribution-uri-as-a-package-source-one-time-setup
+
+-   name: bazel
+    apt_key:
+        url: https://bazel.build/bazel-release.pub.gpg
+
+-   name: bazel
+    apt_repository:
+        repo: 'deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8'
+        filename: bazel

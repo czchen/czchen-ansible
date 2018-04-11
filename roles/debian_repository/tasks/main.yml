@@ -1,6 +1,7 @@
 ---
 
 -   import_tasks: atom.yml
+-   import_tasks: bazel.yml
 -   import_tasks: cassandra.yml
 -   import_tasks: charles-proxy.yml
 -   import_tasks: debian.yml
