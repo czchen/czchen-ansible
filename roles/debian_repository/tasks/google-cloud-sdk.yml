@@ -1,0 +1,10 @@
+---
+
+-   name: google-cloud-sdk
+    apt_key:
+        url: https://packages.cloud.google.com/apt/doc/apt-key.gpg
+
+-   name: google-cloud-sdk
+    apt_repository:
+        repo: deb http://packages.cloud.google.com/apt cloud-sdk-sid main
+        filename: google-cloud-sdk
