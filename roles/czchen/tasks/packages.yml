@@ -69,6 +69,7 @@
         -   name: ledger
         -   name: libghc-hspec-dev
         -   name: libtool
+        -   name: libu2f-udev # For U2F security key
         -   name: lsb-release
         -   name: lshw
         -   name: lxc
