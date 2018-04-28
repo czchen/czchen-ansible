@@ -38,6 +38,7 @@
         -   name: dh-autoreconf
         -   name: dh-make
         -   name: dnsutils
+        -   name: docker-ce
         -   name: dput-ng
         -   name: dropbox
         -   name: dstat

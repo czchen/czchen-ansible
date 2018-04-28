@@ -9,5 +9,5 @@
         repo: '{{ item }}'
         filename: git-lfs
     with_items:
-        -   deb https://packagecloud.io/github/git-lfs/debian/ {{ stable_debian_codename }} main
-        -   deb-src https://packagecloud.io/github/git-lfs/debian/ {{ stable_debian_codename }} main
+        -   deb https://packagecloud.io/github/git-lfs/debian/ {{ debian_codename }} main
+        -   deb-src https://packagecloud.io/github/git-lfs/debian/ {{ debian_codename }} main
