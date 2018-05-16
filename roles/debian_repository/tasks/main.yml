@@ -13,6 +13,7 @@
 -   import_tasks: insomnia.yml
 -   import_tasks: insync.yml
 -   import_tasks: keybase.io.yml
+-   import_tasks: kubernetes.yml
 -   import_tasks: mongodb.yml
 -   import_tasks: sbt.yml
 -   import_tasks: skype.yml
