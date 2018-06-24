@@ -4,7 +4,7 @@
     become_user: root
     vars:
         ppa_ubuntu_codename: xenial
-        stable_debian_codename: jessie
+        debian_codename: stretch
         apt_keyserver: pool.sks-keyservers.net
 
     roles:

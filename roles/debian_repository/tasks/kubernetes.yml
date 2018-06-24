@@ -1,0 +1,12 @@
+---
+
+# https://kubernetes.io/docs/tasks/tools/install-kubectl/
+
+-   name: kubernetes
+    apt_key:
+        url: https://packages.cloud.google.com/apt/doc/apt-key.gpg
+
+-   name: kubernetes
+    apt_repository:
+        repo: deb http://apt.kubernetes.io/ kubernetes-xenial main
+        filename: kubernetes
