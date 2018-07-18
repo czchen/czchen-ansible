@@ -24,6 +24,7 @@
         -   name: cloc
         -   name: cmake
         -   name: cme
+        -   name: cowbuilder
         -   name: cryfs
         -   name: cscope
         -   name: debdelta
