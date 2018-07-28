@@ -36,6 +36,7 @@
         -   name: debmake
         -   name: deborphan
         -   name: devscripts
+        -   name: dgit
         -   name: dh-autoreconf
         -   name: dh-make
         -   name: dnsutils
@@ -52,6 +53,7 @@
         -   name: git
         -   name: git-buildpackage
         -   name: git-crypt
+        -   name: git-debrebase
         -   name: git-dpm
         -   name: gitlab-ci-multi-runner
         -   name: git-lfs
