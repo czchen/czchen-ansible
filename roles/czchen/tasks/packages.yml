@@ -55,8 +55,8 @@
         -   name: git-crypt
         -   name: git-debrebase
         -   name: git-dpm
-        -   name: gitlab-ci-multi-runner
         -   name: git-lfs
+        -   name: gitlab-ci-multi-runner
         -   name: glances
         -   name: glibc-doc
         -   name: glibc-doc-reference
