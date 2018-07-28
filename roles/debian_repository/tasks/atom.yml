@@ -2,11 +2,11 @@
 
 # https://flight-manual.atom.io/getting-started/sections/installing-atom/#debian-and-ubuntu-debapt
 
--   name: atom
-    apt_key:
-        url: https://packagecloud.io/AtomEditor/atom/gpgkey
+- name: atom
+  apt_key:
+    url: https://packagecloud.io/AtomEditor/atom/gpgkey
 
--   name: atom
-    apt_repository:
-        repo: 'deb https://packagecloud.io/AtomEditor/atom/any/ any main'
-        filename: atom
+- name: atom
+  apt_repository:
+    repo: 'deb https://packagecloud.io/AtomEditor/atom/any/ any main'
+    filename: atom

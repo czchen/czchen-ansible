@@ -1,13 +1,13 @@
 ---
--   hosts: '{{ hosts }}'
-    become: true
-    become_user: root
-    vars:
-        ppa_ubuntu_codename: xenial
-        debian_codename: stretch
-        apt_keyserver: pool.sks-keyservers.net
+- hosts: '{{ hosts }}'
+  become: true
+  become_user: root
+  vars:
+    ppa_ubuntu_codename: xenial
+    debian_codename: stretch
+    apt_keyserver: pool.sks-keyservers.net
 
-    roles:
-        -   security
-        -   debian_repository
-        -   czchen
+  roles:
+    - security
+    - debian_repository
+    - czchen
