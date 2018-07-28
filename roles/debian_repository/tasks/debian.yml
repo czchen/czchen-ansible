@@ -34,5 +34,5 @@
 
 - name: debian
   apt:
-    update_cache: yes
+    update_cache: 'yes'
   when: apt_repository.get('src') != None
