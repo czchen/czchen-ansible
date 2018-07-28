@@ -2,11 +2,11 @@
 
 # https://code.visualstudio.com/docs/setup/linux
 
--   name: vscode
-    apt_key:
-        url: https://packages.microsoft.com/keys/microsoft.asc
+- name: vscode
+  apt_key:
+    url: https://packages.microsoft.com/keys/microsoft.asc
 
--   name: vscode
-    apt_repository:
-        repo: deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main
-        filename: vscode
+- name: vscode
+  apt_repository:
+    repo: deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main
+    filename: vscode

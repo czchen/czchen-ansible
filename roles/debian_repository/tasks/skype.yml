@@ -2,13 +2,11 @@
 
 # https://repo.skype.com/
 
--   name: skype
-    apt_key:
-        url: https://repo.skype.com/data/SKYPE-GPG-KEY
+- name: skype
+  apt_key:
+    url: https://repo.skype.com/data/SKYPE-GPG-KEY
 
--   name: skype
-    apt_repository:
-        repo: deb [arch=amd64] https://repo.skype.com/deb stable main
-        filename: skype-stable
-    with_items:
-        -   'deb [arch=amd64] https://repo.skype.com/deb stable main'
+- name: skype
+  apt_repository:
+    repo: deb [arch=amd64] https://repo.skype.com/deb stable main
+    filename: skype-stable

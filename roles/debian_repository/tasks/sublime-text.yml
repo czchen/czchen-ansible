@@ -2,8 +2,8 @@
 
 # https://launchpad.net/~webupd8team/+archive/ubuntu/sublime-text-3
 
--   name: sublime-text-3
-    apt_repository:
-        repo: 'ppa:webupd8team/sublime-text-3'
-        codename: '{{ ppa_ubuntu_codename }}'
-        filename: sublime-text-3
+- name: sublime-text-3
+  apt_repository:
+    repo: 'ppa:webupd8team/sublime-text-3'
+    codename: '{{ ppa_ubuntu_codename }}'
+    filename: sublime-text-3
