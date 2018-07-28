@@ -2,11 +2,11 @@
 
 # https://toolbelt.heroku.com/debian
 
--   name: heroku
-    apt_key:
-        url: https://toolbelt.heroku.com/apt/release.key
+- name: heroku
+  apt_key:
+    url: https://toolbelt.heroku.com/apt/release.key
 
--   name: heroku
-    apt_repository:
-        repo: deb http://toolbelt.heroku.com/ubuntu ./
-        filename: heroku
+- name: heroku
+  apt_repository:
+    repo: deb http://toolbelt.heroku.com/ubuntu ./
+    filename: heroku
