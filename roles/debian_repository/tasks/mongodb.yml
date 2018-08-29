@@ -9,5 +9,5 @@
 
 - name: mongodb
   apt_repository:
-    repo: deb http://repo.mongodb.org/apt/debian {{ debian_codename }}/mongodb-org/4.0 main
+    repo: deb [arch=amd64] http://repo.mongodb.org/apt/debian {{ debian_codename }}/mongodb-org/4.0 main
     filename: mongodb-org
