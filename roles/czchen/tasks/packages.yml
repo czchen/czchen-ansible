@@ -6,7 +6,7 @@
     state: '{{ item.state | default("present") }}'
     purge: 'yes'
 
-  with_tems:
+  with_items:
     - name: afl
     - name: apt-file
     - name: apt-listchanges
