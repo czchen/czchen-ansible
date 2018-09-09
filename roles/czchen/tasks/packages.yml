@@ -39,6 +39,7 @@
     - name: dgit
     - name: dh-autoreconf
     - name: dh-make
+    - name: dh-make-golang
     - name: dnsutils
     - name: docker.io
     - name: dput-ng
