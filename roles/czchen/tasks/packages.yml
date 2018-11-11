@@ -107,7 +107,6 @@
     - name: sbuild
     - name: scdaemon
     - name: shellcheck
-    - name: shutter
     - name: signing-party
     - name: silversearcher-ag
     - name: sirikali
