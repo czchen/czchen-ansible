@@ -133,5 +133,6 @@
     - name: yamllint
     - name: yapf
     - name: yarn
+    - name: yubikey-manager
     - name: zplug
     - name: zsh
