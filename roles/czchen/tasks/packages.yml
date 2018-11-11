@@ -75,6 +75,7 @@
     - name: kubectl
     - name: ledger
     - name: libghc-hspec-dev
+    - name: libpam-yubico
     - name: libtool
     - name: libu2f-udev  # For U2F security key
     - name: lsb-release
