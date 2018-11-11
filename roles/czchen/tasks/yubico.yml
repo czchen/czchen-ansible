@@ -1,0 +1,11 @@
+---
+
+- name: Setup Yubico 2FA for sudo
+  lineinfile:
+    path: /etc/pam.d/sudo
+    line: auth required pam_yubico.so mode=challenge-response
+
+- name: Setup Yubico 2FA for lightdm
+  lineinfile:
+    path: /etc/pam.d/lightdm
+    line: auth sufficient pam_yubico.so mode=challenge-response
