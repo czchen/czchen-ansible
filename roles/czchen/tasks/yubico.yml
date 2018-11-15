@@ -1,11 +1,11 @@
 ---
 
-- name: Setup Yubico 2FA for sudo
+- name: Use Yubico challenge-response as 2FA
   lineinfile:
-    path: /etc/pam.d/sudo
+    path: '{{ item.path }}'
     line: auth required pam_yubico.so mode=challenge-response
 
-- name: Setup Yubico 2FA for lightdm
-  lineinfile:
-    path: /etc/pam.d/lightdm
-    line: auth sufficient pam_yubico.so mode=challenge-response
+  with_items:
+    - path: /etc/pam.d/sudo
+    - path: /etc/pam.d/lightdm
+    - path: /etc/pam.d/cinnamon-screensaver
