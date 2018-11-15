@@ -87,6 +87,7 @@
     - name: manpages-posix-dev
     - name: msmtp
     - name: mutt
+    - name: ncdu
     - name: needrestart
     - name: net-tools
     - name: network-manager-openvpn-gnome
