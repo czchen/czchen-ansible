@@ -24,6 +24,7 @@
     - name: cloc
     - name: cmake
     - name: cme
+    - name: confluent-platform-2.11
     - name: cowbuilder
     - name: cryfs
     - name: cscope
