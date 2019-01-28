@@ -1,2 +1,5 @@
 #!/bin/sh
+set -u
+set -e
+
 ansible-playbook --ask-become-pass --extra-vars="hosts=localhost" site.yml
