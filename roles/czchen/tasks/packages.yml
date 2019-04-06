@@ -15,6 +15,7 @@
     - name: autoconf
     - name: automake
     - name: autopkgtest
+    - name: beancount
     - name: ben
     - name: blktrace
     - name: bmon
