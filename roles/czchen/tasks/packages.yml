@@ -101,6 +101,7 @@
     - name: pinfo
     - name: playonlinux
     - name: pylama
+    - name: python3-autopep8
     - name: python3-fava
     - name: python3-venv
     - name: quilt
