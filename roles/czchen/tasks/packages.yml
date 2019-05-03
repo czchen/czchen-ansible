@@ -87,6 +87,7 @@
     - name: manpages-dev
     - name: manpages-posix
     - name: manpages-posix-dev
+    - name: mercurial
     - name: msmtp
     - name: mutt
     - name: ncdu
