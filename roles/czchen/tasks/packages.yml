@@ -101,6 +101,7 @@
     - name: parcimonie
     - name: pass
     - name: pinfo
+    - name: pipx
     - name: playonlinux
     - name: pylama
     - name: python3-autopep8
