@@ -52,6 +52,7 @@
     - name: font-manager
     - name: fonts-noto
     - name: fonts-noto-cjk
+    - name: fzf
     - name: ghc
     - name: git
     - name: git-buildpackage
