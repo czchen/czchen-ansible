@@ -133,6 +133,7 @@
     - name: ubuntu-make
     - name: unattended-upgrades
     - name: valgrind
+    - name: vault
     - name: vim-gtk  # For system clipboard
     - name: virt-manager
     - name: voltron
