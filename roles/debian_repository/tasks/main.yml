@@ -1,8 +1,6 @@
 ---
 
-- import_tasks: bazel.yml
 - import_tasks: charles-proxy.yml
-- import_tasks: confluent.yml
 - import_tasks: debian.yml
 - import_tasks: dropbox.yml
 - import_tasks: google-chrome.yml
