@@ -9,9 +9,5 @@
 - import_tasks: google-cloud-sdk.yml
 - import_tasks: insomnia.yml
 - import_tasks: keybase.io.yml
-- import_tasks: kubernetes.yml
-- import_tasks: sbt.yml
-- import_tasks: skype.yml
-- import_tasks: ubuntu-make.yml
 - import_tasks: vscode.yml
 - import_tasks: yarn.yml
