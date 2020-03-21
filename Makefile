@@ -8,4 +8,6 @@ ansible:
 
 .PHONY: snap
 snap:
-	snap install
+	snap install kubectl
+	snap install vault
+	snap install yq
