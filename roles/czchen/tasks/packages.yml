@@ -10,23 +10,20 @@
     - name: afl
     - name: apt-file
     - name: apt-listchanges
-    - name: asciinema
+    # - name: asciinema
     - name: autoconf
     - name: automake
     - name: autopkgtest
     - name: beancount
     - name: ben
-    - name: blktrace
-    - name: bmon
+    # - name: blktrace
+    # - name: bmon
     - name: build-essential
     - name: cabal-install
     - name: check-all-the-things
-    - name: cloc
     - name: cmake
     - name: cme
-    - name: confluent-platform-2.11
     - name: cowbuilder
-    - name: cryfs
     - name: cscope
     - name: debdelta
     - name: debhelper
@@ -52,10 +49,8 @@
     - name: fonts-noto
     - name: fonts-noto-cjk
     - name: fzf
-    - name: ghc
     - name: git
     - name: git-buildpackage
-    - name: git-crypt
     - name: git-debrebase
     - name: git-dpm
     - name: git-lfs
@@ -64,7 +59,6 @@
     - name: glibc-doc
     - name: glibc-doc-reference
     - name: gnupg2
-    - name: go-dep
     - name: goobook
     - name: google-cloud-sdk
     - name: graphviz
@@ -116,7 +110,6 @@
     - name: shellcheck
     - name: signing-party
     - name: silversearcher-ag
-    - name: sirikali
     - name: snapd
     - name: sudo
     - name: sysdig
@@ -134,7 +127,6 @@
     - name: valgrind
     - name: vault
     - name: vim-gtk  # For system clipboard
-    - name: virt-manager
     - name: voltron
     - name: yadm
     - name: yamllint
