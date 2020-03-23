@@ -8,6 +8,7 @@ ansible:
 
 .PHONY: snap
 snap:
-	snap install kubectl
-	snap install vault
-	snap install yq
+	sudo sh -c 'snap install intellij-idea-community || snap refresh intellij-idea-community'
+	sudo snap install kubectl
+	sudo snap install vault
+	sudo snap install yq
