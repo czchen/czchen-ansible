@@ -8,7 +8,9 @@ ansible:
 
 .PHONY: snap
 snap:
-	sudo sh -c 'snap install intellij-idea-community || snap refresh intellij-idea-community'
+	sudo snap install authy --beta
+	sudo snap install intellij-idea-community --classic
+	sudo snap install kontena-lens --classic
 	sudo snap install kubectl
 	sudo snap install vault
 	sudo snap install yq
