@@ -39,6 +39,7 @@ snap:
 	sudo snap install intellij-idea-community --classic
 	sudo snap install kontena-lens --classic
 	sudo snap install kubectl
+	sudo snap install postman
 	sudo snap install vault
 	sudo snap install yq
 
