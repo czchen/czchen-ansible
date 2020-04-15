@@ -26,6 +26,7 @@ golang:
 pipx:
 	pipx install autopep8 || pipx upgrade autopep8
 	pipx install bump2version || pipx upgrade bump2version
+	pipx install httpie || pipx upgrade httpie
 	pipx install j2cli || pipx upgrade j2cli
 	pipx install linode-cli || pipx upgrade linode-cli
 	pipx install pipenv || pipx upgrade pipenv
