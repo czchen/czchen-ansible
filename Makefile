@@ -1,5 +1,5 @@
 .PHONY: setup
-setup: ansible asdf golang snap yarn
+setup: ansible asdf golang pipx snap yarn
 	echo "setup completed"
 
 .PHONY: ansible
@@ -21,6 +21,17 @@ golang:
 	go get -u github.com/xo/usql
 	go get -u github.com/prometheus/prometheus/cmd/...
 	go get -u github.com/hairyhenderson/gomplate/cmd/gomplate
+
+.PHONY: pipx
+pipx:
+	pipx install autopep8 || pipx upgrade autopep8
+	pipx install bump2version || pipx upgrade bump2version
+	pipx install j2cli || pipx upgrade j2cli
+	pipx install linode-cli || pipx upgrade linode-cli
+	pipx install pipenv || pipx upgrade pipenv
+	pipx install python-language-server || pipx upgrade python-language-server
+	pipx install tldr || pipx upgrade tldr
+	pipx install yaml-resume || pipx upgrade yaml-resume
 
 .PHONY: snap
 snap:
