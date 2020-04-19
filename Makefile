@@ -44,6 +44,7 @@ endef
 .PHONY: snap
 snap:
 	$(call install-snap,authy,--beta)
+	$(call install-snap,google-cloud-sdk)
 	$(call install-snap,intellij-idea-community,--classic)
 	$(call install-snap,kontena-lens,--classic)
 	$(call install-snap,kubectl)

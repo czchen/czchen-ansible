@@ -60,7 +60,7 @@
     - name: glibc-doc-reference
     - name: gnupg2
     - name: goobook
-    - name: google-cloud-sdk
+    # - name: google-cloud-sdk
     - name: graphviz
     - name: gufw
     - name: how-can-i-help
