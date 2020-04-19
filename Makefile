@@ -6,21 +6,30 @@ setup: ansible asdf golang pipx snap yarn
 ansible:
 	ansible-playbook --ask-become-pass --extra-vars="hosts=localhost" site.yml
 
+define install-asdf
+	asdf plugin-add $(1) || true
+	asdf plugin-update $(1)
+	asdf install $(1) $(2)
+	asdf global $(1) $(2)
+endef
 .PHONY: asdf
 asdf:
-	asdf plugin-add helm
-	asdf plugin-add kops
-	asdf plugin-add terraform
+	$(call install-asdf,helm,3.1.2)
+	$(call install-asdf,k9s,0.19.2)
+	$(call install-asdf,sbt,1.3.10)
+	$(call install-asdf,terraform,0.12.24)
 
+define install-golang
+	go get -u $(1)
+endef
 .PHONY: golang
 golang:
-	go get -u github.com/cswank/kcli
-	go get -u github.com/senorprogrammer/wtf
-	go get -u github.com/ueokande/logbook
-	go get -u github.com/wercker/stern
-	go get -u github.com/xo/usql
-	go get -u github.com/prometheus/prometheus/cmd/...
-	go get -u github.com/hairyhenderson/gomplate/cmd/gomplate
+	$(call install-golang,github.com/cswank/kcli)
+	$(call install-golang,github.com/senorprogrammer/wtf)
+	$(call install-golang,github.com/ueokande/logbook)
+	$(call install-golang,github.com/wercker/stern)
+	$(call install-golang,github.com/xo/usql)
+	$(call install-golang,github.com/prometheus/prometheus/cmd/...)
 
 define install-pipx
 	pipx install $(1) || pipx upgrade $(1)
