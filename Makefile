@@ -61,6 +61,9 @@ snap:
 	$(call install-snap,vault)
 	$(call install-snap,yq)
 
+define install-yarn
+	yarn add global $(1)
+endef
 .PHONY: yarn
 yarn:
-	yarn add global kubelive
+	$(call install-yarn,kubelive)
