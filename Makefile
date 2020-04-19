@@ -22,26 +22,33 @@ golang:
 	go get -u github.com/prometheus/prometheus/cmd/...
 	go get -u github.com/hairyhenderson/gomplate/cmd/gomplate
 
+define install-pipx
+	pipx install $(1) || pipx upgrade $(1)
+endef
 .PHONY: pipx
 pipx:
-	pipx install autopep8 || pipx upgrade autopep8
-	pipx install bump2version || pipx upgrade bump2version
-	pipx install httpie || pipx upgrade httpie
-	pipx install j2cli || pipx upgrade j2cli
-	pipx install linode-cli || pipx upgrade linode-cli
-	pipx install pipenv || pipx upgrade pipenv
-	pipx install python-language-server || pipx upgrade python-language-server
-	pipx install tldr || pipx upgrade tldr
-	pipx install yaml-resume || pipx upgrade yaml-resume
+	$(call install-pipx,autopep8)
+	$(call install-pipx,bump2version)
+	$(call install-pipx,httpie)
+	$(call install-pipx,j2cli)
+	$(call install-pipx,linode-cli)
+	$(call install-pipx,pipenv)
+	$(call install-pipx,python-language-server)
+	$(call install-pipx,tldr)
+	$(call install-pipx,yaml-resume)
 
+define install-snap
+	sudo snap install $(1) $(2)
+	sudo snap refresh $(1)
+endef
 .PHONY: snap
 snap:
-	sudo snap install authy --beta
-	sudo snap install intellij-idea-community --classic
-	sudo snap install kontena-lens --classic
-	sudo snap install kubectl
-	sudo snap install vault
-	sudo snap install yq
+	$(call install-snap,authy,--beta)
+	$(call install-snap,intellij-idea-community,--classic)
+	$(call install-snap,kontena-lens,--classic)
+	$(call install-snap,kubectl)
+	$(call install-snap,vault)
+	$(call install-snap,yq)
 
 .PHONY: yarn
 yarn:
