@@ -47,6 +47,7 @@ snap:
 	$(call install-snap,google-cloud-sdk)
 	$(call install-snap,intellij-idea-community,--classic)
 	$(call install-snap,kontena-lens,--classic)
+	$(call install-snap,postman)
 	$(call install-snap,kubectl)
 	$(call install-snap,vault)
 	$(call install-snap,yq)
