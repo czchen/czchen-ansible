@@ -41,6 +41,7 @@ pipx:
 	$(call install-pipx,httpie)
 	$(call install-pipx,j2cli)
 	$(call install-pipx,linode-cli)
+	$(call install-pipx,mycli)
 	$(call install-pipx,pipenv)
 	$(call install-pipx,python-language-server)
 	$(call install-pipx,tldr)
