@@ -24,12 +24,13 @@ define install-golang
 endef
 .PHONY: golang
 golang:
+	$(call install-golang,github.com/bronze1man/yaml2json)
 	$(call install-golang,github.com/cswank/kcli)
+	$(call install-golang,github.com/prometheus/prometheus/cmd/...)
 	$(call install-golang,github.com/senorprogrammer/wtf)
 	$(call install-golang,github.com/ueokande/logbook)
 	$(call install-golang,github.com/wercker/stern)
 	$(call install-golang,github.com/xo/usql)
-	$(call install-golang,github.com/prometheus/prometheus/cmd/...)
 
 define install-pipx
 	pipx install $(1) || pipx upgrade $(1)
