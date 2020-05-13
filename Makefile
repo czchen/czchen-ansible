@@ -1,5 +1,5 @@
 .PHONY: setup
-setup: ansible asdf golang pipx snap yarn
+setup: ansible asdf krew golang pipx snap yarn
 	echo "setup completed"
 
 .PHONY: ansible
