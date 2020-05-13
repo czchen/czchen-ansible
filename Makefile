@@ -21,6 +21,14 @@ asdf:
 	$(call install-asdf,terraform,0.12.24)
 	$(call install-asdf,yarn,1.22.4)
 
+.PHONY: krew
+krew:
+	kubectl krew install ctx
+	kubectl krew install debug
+	kubectl krew install grep
+	kubectl krew install iexec
+	kubectl krew install tree
+
 define install-golang
 	go get -u $(1)
 endef
