@@ -27,7 +27,7 @@ krew:
 	kubectl krew install debug
 	kubectl krew install grep
 	kubectl krew install iexec
-	kubectl krew install ns
+	kubectl krew install tail
 	kubectl krew install tree
 
 define install-golang
