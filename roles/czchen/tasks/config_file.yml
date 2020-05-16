@@ -37,6 +37,7 @@
         # This file is managed by Ansible. DO NOT EDIT.
 
         kernel.sysrq = 1
+        kernel.unprivileged_userns_clone = 1
 
     - dest: /etc/udev/hwdb.d/99-czchen.hwdb
       content: |
