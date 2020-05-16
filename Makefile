@@ -66,11 +66,10 @@ define install-snap
 endef
 .PHONY: snap
 snap:
-	$(call install-snap,authy,--beta)
 	$(call install-snap,intellij-idea-community,--classic)
 	$(call install-snap,kontena-lens,--classic)
 	$(call install-snap,postman)
-	$(call install-snap,kubectl)
+	$(call install-snap,kubectl,--classic)
 	$(call install-snap,vault)
 	$(call install-snap,yq)
 
