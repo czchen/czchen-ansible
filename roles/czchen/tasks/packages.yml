@@ -60,6 +60,7 @@
     - name: gufw
     - name: how-can-i-help
     - name: jq
+    - name: kubectx
     - name: ledger
     - name: libghc-hspec-dev
     - name: libpam-yubico
@@ -88,6 +89,7 @@
     - name: pinfo
     - name: pipx
     - name: playonlinux
+    - name: podman
     - name: pylama
     - name: python3-autopep8
     - name: python3-fava
