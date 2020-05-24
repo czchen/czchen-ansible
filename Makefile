@@ -1,15 +1,23 @@
 .PHONY: setup
-setup: prepare ansible asdf krew golang pipx snap yarn
+setup: ansible asdf krew golang pipx snap yarn
 	echo "setup completed"
 
-.PHONY: prepare
-prepare:
+################################################################################
+# ansible
+################################################################################
+
+.PHONY: prepare-ansible
+prepare-ansible:
 	sudo apt install -y ansible
 	sudo dpkg --add-architecture i386
 
 .PHONY: ansible
 ansible:
 	ansible-playbook --ask-become-pass --extra-vars="hosts=localhost" site.yml
+
+################################################################################
+# asdf
+################################################################################
 
 define install-asdf
 	asdf plugin-add $(1) || true
@@ -26,6 +34,15 @@ asdf:
 	$(call install-asdf,terraform,0.12.24)
 	$(call install-asdf,yarn,1.22.4)
 
+################################################################################
+# krew
+################################################################################
+
+.PHONY: prepare-krew
+prepare-krew:
+	# https://krew.sigs.k8s.io/docs/user-guide/setup/install/
+	set -x; cd "$(mktemp -d)" && curl -fsSLO "https://github.com/kubernetes-sigs/krew/releases/latest/download/krew.{tar.gz,yaml}" && tar zxvf krew.tar.gz && KREW=./krew-"$(shell uname | tr '[:upper:]' '[:lower:]')_amd64" && "$$KREW" install --manifest=krew.yaml --archive=krew.tar.gz && "$$KREW" update
+
 .PHONY: krew
 krew:
 	kubectl krew install ctx
@@ -35,6 +52,10 @@ krew:
 	kubectl krew install ns
 	kubectl krew install tail
 	kubectl krew install tree
+
+################################################################################
+# golang
+################################################################################
 
 define install-golang
 	go get -u $(1)
@@ -48,6 +69,10 @@ golang:
 	$(call install-golang,github.com/ueokande/logbook)
 	$(call install-golang,github.com/wercker/stern)
 	$(call install-golang,github.com/xo/usql)
+
+################################################################################
+# pipx
+################################################################################
 
 define install-pipx
 	pipx install $(1) || pipx upgrade $(1)
@@ -65,6 +90,10 @@ pipx:
 	$(call install-pipx,tldr)
 	$(call install-pipx,yaml-resume)
 
+################################################################################
+# snap
+################################################################################
+
 define install-snap
 	sudo snap install $(1) $(2)
 	sudo snap refresh $(1)
@@ -77,6 +106,10 @@ snap:
 	$(call install-snap,kubectl,--classic)
 	$(call install-snap,vault)
 	$(call install-snap,yq)
+
+################################################################################
+# yarn
+################################################################################
 
 define install-yarn
 	yarn add global $(1)
