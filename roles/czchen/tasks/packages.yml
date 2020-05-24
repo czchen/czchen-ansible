@@ -48,7 +48,6 @@
     - name: git-debrebase
     - name: git-dpm
     - name: git-lfs
-    - name: gitlab-ci-multi-runner
     - name: glances
     - name: glibc-doc
     - name: glibc-doc-reference
@@ -88,7 +87,6 @@
     - name: pass
     - name: pinfo
     - name: pipx
-    - name: playonlinux
     - name: podman
     - name: pylama
     - name: python3-autopep8
