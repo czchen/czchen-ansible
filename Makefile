@@ -1,6 +1,11 @@
 .PHONY: setup
-setup: ansible asdf krew golang pipx snap yarn
+setup: prepare ansible asdf krew golang pipx snap yarn
 	echo "setup completed"
+
+.PHONY: prepare
+prepare:
+	sudo apt install -y ansible
+	sudo dpkg --add-architecture i386
 
 .PHONY: ansible
 ansible:
