@@ -58,6 +58,7 @@
     - name: graphviz
     - name: gufw
     - name: how-can-i-help
+    - name: httpcode
     - name: jq
     - name: kubectx
     - name: ledger
