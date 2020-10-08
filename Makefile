@@ -29,7 +29,6 @@ endef
 asdf:
 	$(call install-asdf,helm,3.1.2)
 	$(call install-asdf,k9s,0.19.2)
-	$(call install-asdf,nodejs,10.20.1)
 	$(call install-asdf,sbt,1.3.10)
 	$(call install-asdf,terraform,0.12.24)
 	$(call install-asdf,yarn,1.22.4)
@@ -117,4 +116,6 @@ define install-yarn
 endef
 .PHONY: yarn
 yarn:
+	$(call install-yarn,git-removed-branches)
 	$(call install-yarn,kubelive)
+	$(call install-yarn,npx)
