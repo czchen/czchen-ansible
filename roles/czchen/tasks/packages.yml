@@ -82,6 +82,7 @@
     - name: network-manager-openvpn-gnome
     - name: network-manager-pptp  # for VPN
     - name: nmap
+    - name: npm
     - name: ntp
     - name: p7zip-full
     - name: parcimonie
