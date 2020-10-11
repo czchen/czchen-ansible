@@ -97,12 +97,12 @@
     - name: quilt
     - name: ratt
     - name: reptyr
+    - name: ripgrep
     - name: rr
     - name: sbuild
     - name: scdaemon
     - name: shellcheck
     - name: signing-party
-    - name: silversearcher-ag
     - name: snapd
     - name: sudo
     - name: sysdig
