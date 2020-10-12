@@ -119,7 +119,7 @@
     - name: voltron
     - name: yadm
     - name: yamllint
-    - name: yapf
+    - name: yapf3
     - name: yarn
     - name: yubikey-manager
     - name: zplug
