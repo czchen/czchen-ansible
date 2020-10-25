@@ -39,6 +39,12 @@
         kernel.sysrq = 1
         kernel.unprivileged_userns_clone = 1
 
+    - dest: /etc/udev/hwdb.d/61-sensor-local.hwdb
+      content: |
+        # This file is managed by Ansible. DO NOT EDIT.
+        sensor:modalias:acpi:BOSC0200*:dmi:*:svnTOPJOY*:pnFalcon:*
+         ACCEL_MOUNT_MATRIX=-1, 0, 0; 0, 1, 0; 0, 0, 1
+
 - name: Enable i386
   lineinfile:
     name: /var/lib/dpkg/arch
