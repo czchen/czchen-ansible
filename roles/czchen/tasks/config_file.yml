@@ -39,14 +39,6 @@
         kernel.sysrq = 1
         kernel.unprivileged_userns_clone = 1
 
-    - dest: /etc/udev/hwdb.d/99-czchen.hwdb
-      content: |
-        # This file is managed by Ansible. DO NOT EDIT.
-
-        # https://forums.puri.sm/t/keyboard-layout-unable-to-recognize-pipe/2022/10
-        evdev:atkbd:dmi:bvn*:bvr*:bd*:svnPurism:pnLibrem13v2*
-        KEYBOARD_KEY_56=backslash
-
 - name: Enable i386
   lineinfile:
     name: /var/lib/dpkg/arch
