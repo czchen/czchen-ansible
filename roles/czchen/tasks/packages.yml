@@ -7,7 +7,6 @@
     purge: 'yes'
 
   with_items:
-    - name: afl
     - name: apt-file
     - name: apt-listchanges
     - name: autoconf
@@ -73,7 +72,6 @@
     - name: manpages-dev
     - name: manpages-posix
     - name: manpages-posix-dev
-    - name: mercurial
     - name: msmtp
     - name: mutt
     - name: ncdu
@@ -114,7 +112,6 @@
     - name: tree
     - name: ubuntu-dev-tools
     - name: unattended-upgrades
-    - name: valgrind
     - name: vim-gtk  # For system clipboard
     - name: voltron
     - name: yadm
