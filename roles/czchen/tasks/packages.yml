@@ -103,7 +103,6 @@
     - name: signing-party
     - name: snapd
     - name: sudo
-    - name: sysdig
     - name: sysstat
     - name: texinfo
     - name: tig
