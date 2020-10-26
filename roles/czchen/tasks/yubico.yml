@@ -6,6 +6,5 @@
     line: auth required pam_yubico.so mode=challenge-response
 
   with_items:
+    - path: /etc/pam.d/gdm-password
     - path: /etc/pam.d/sudo
-    - path: /etc/pam.d/lightdm
-    - path: /etc/pam.d/cinnamon-screensaver
