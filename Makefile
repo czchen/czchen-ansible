@@ -6,13 +6,13 @@ setup: ansible asdf krew golang pipx snap yarn
 # ansible
 ################################################################################
 
-.PHONY: prepare-ansible
+.PHONY:
 prepare-ansible:
 	sudo apt install -y ansible
 	sudo dpkg --add-architecture i386
 
 .PHONY: ansible
-ansible:
+ansible: prepare-ansible
 	ansible-playbook --ask-become-pass --extra-vars="hosts=localhost" site.yml
 
 ################################################################################
