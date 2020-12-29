@@ -86,6 +86,7 @@ pipx:
 	$(call install-pipx,mycli)
 	$(call install-pipx,parquet-cli)
 	$(call install-pipx,pipenv)
+	$(call install-pipx,poetry)
 	$(call install-pipx,python-language-server)
 	$(call install-pipx,tldr)
 	$(call install-pipx,yaml-resume)
