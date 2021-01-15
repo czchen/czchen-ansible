@@ -18,6 +18,7 @@
     - name: cmake
     - name: cme
     - name: cowbuilder
+    - name: crun
     - name: cscope
     - name: debdelta
     - name: debhelper
