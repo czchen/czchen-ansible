@@ -46,11 +46,17 @@ prepare-krew:
 krew:
 	kubectl krew install ctx
 	kubectl krew install debug
+	kubectl krew install exec-cronjob
+	kubectl krew install graph
 	kubectl krew install grep
 	kubectl krew install iexec
+	kubectl krew install mtail
 	kubectl krew install ns
+	kubectl krew install popeye
+	kubectl krew install prune-unused
 	kubectl krew install tail
 	kubectl krew install tree
+	kubectl krew install view-secret
 
 ################################################################################
 # golang
