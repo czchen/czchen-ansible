@@ -107,7 +107,8 @@ define install-snap
 endef
 .PHONY: snap
 snap:
-	$(call install-snap,intellij-idea-community,--classic)
+	$(call install-snap,intellij-idea-ultimate,--classic)
+	$(call install-snap,kafkactl)
 	$(call install-snap,kontena-lens,--classic)
 	$(call install-snap,kubectl,--classic)
 	$(call install-snap,minecraft-launcher-ot)
