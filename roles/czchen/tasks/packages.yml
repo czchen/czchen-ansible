@@ -9,17 +9,13 @@
   with_items:
     - name: apt-file
     - name: apt-listchanges
-    - name: autoconf
-    - name: automake
     - name: autopkgtest
     - name: ben
     - name: build-essential
     - name: check-all-the-things
-    - name: cmake
     - name: cme
     - name: cowbuilder
     - name: crun
-    - name: cscope
     - name: debdelta
     - name: debhelper
     - name: debian-archive-keyring
@@ -38,10 +34,10 @@
     - name: dput-ng
     - name: dstat
     - name: exuberant-ctags
-    - name: fcitx-chewing
+    # - name: fcitx-chewing
     - name: font-manager
-    - name: fonts-noto
-    - name: fonts-noto-cjk
+    # - name: fonts-noto
+    # - name: fonts-noto-cjk
     - name: fzf
     - name: git
     - name: git-buildpackage
@@ -53,7 +49,7 @@
     - name: glibc-doc-reference
     - name: gnupg2
     - name: goobook
-    - name: google-chrome-stable
+    # - name: google-chrome-stable
     - name: google-cloud-sdk
     - name: graphviz
     - name: gufw
