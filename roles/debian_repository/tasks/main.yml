@@ -1,9 +1,6 @@
 ---
 
-- import_tasks: charles-proxy.yml
 - import_tasks: debian.yml
-#- import_tasks: dropbox.yml
 - import_tasks: google-chrome.yml
 - import_tasks: google-cloud-sdk.yml
-- import_tasks: vscode.yml
-# - import_tasks: yarn.yml
+- import_tasks: code.yml
