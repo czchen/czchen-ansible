@@ -1,0 +1,50 @@
+---
+
+- name: install packages
+  apt:
+    name: '{{ item.name }}'
+    state: '{{ item.state | default("present") }}'
+    purge: 'yes'
+
+  with_items:
+    - name: autopkgtest
+    - name: ben
+    - name: build-essential
+    - name: check-all-the-things
+    - name: cme
+    - name: cowbuilder
+    - name: debdelta
+    - name: debhelper
+    - name: debian-archive-keyring
+    - name: debian-goodies
+    - name: debian-keyring
+    - name: debian-policy
+    - name: debmake
+    - name: deborphan
+    - name: devscripts
+    - name: dgit
+    - name: dh-autoreconf
+    - name: dh-make
+    - name: dh-make-golang
+    - name: dput-ng
+    - name: exuberant-ctags
+    - name: git-buildpackage
+    - name: git-debrebase
+    - name: git-dpm
+    - name: git-lfs
+    - name: glances
+    - name: glibc-doc
+    - name: glibc-doc-reference
+    - name: google-cloud-sdk
+    - name: how-can-i-help
+    - name: kubectx
+    - name: libghc-hspec-dev
+    - name: pylama
+    - name: python3-autopep8
+    - name: python3-fava
+    - name: python3-venv
+    - name: quilt
+    - name: reptyr
+    - name: shellcheck
+    - name: texinfo
+    - name: ubuntu-dev-tools

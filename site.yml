@@ -10,4 +10,5 @@
   roles:
     - security
     - debian_repository
-    - czchen
+    - base
+    - developer

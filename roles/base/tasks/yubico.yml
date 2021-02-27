@@ -1,0 +1,10 @@
+---
+
+# - name: Use Yubico challenge-response as 2FA
+#   lineinfile:
+#     path: '{{ item.path }}'
+#     line: auth required pam_yubico.so mode=challenge-response
+
+#   with_items:
+#     - path: /etc/pam.d/gdm-password
+#     - path: /etc/pam.d/sudo
