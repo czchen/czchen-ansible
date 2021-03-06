@@ -9,23 +9,17 @@
   with_items:
     - name: apt-file
     - name: apt-listchanges
+    - name: code
     - name: crun
     - name: dnsutils
-    - name: docker.io
     - name: dstat
-    # - name: fcitx-chewing
-    - name: font-manager
-    # - name: fonts-noto
-    # - name: fonts-noto-cjk
+    - name: fonts-jetbrains-mono
     - name: fzf
     - name: git
     - name: gnupg2
     - name: goobook
-    # - name: google-chrome-stable
     - name: graphviz
     - name: gufw
-    - name: httpcode
-    - name: jq
     - name: ledger
     - name: libpam-yubico
     - name: libtool
@@ -52,7 +46,6 @@
     - name: ratt
     - name: ripgrep
     - name: rr
-    - name: sbuild
     - name: scdaemon
     - name: signing-party
     - name: snapd

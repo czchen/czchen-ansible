@@ -37,6 +37,8 @@
     - name: glibc-doc-reference
     - name: google-cloud-sdk
     - name: how-can-i-help
+    - name: httpcode
+    - name: jq
     - name: kubectx
     - name: libghc-hspec-dev
     - name: pylama
@@ -45,6 +47,7 @@
     - name: python3-venv
     - name: quilt
     - name: reptyr
+    - name: sbuild
     - name: shellcheck
     - name: texinfo
     - name: ubuntu-dev-tools

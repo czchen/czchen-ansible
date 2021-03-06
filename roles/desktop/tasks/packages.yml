@@ -1,0 +1,14 @@
+---
+
+- name: install packages
+  apt:
+    name: '{{ item.name }}'
+    state: '{{ item.state | default("present") }}'
+    purge: 'yes'
+
+  with_items:
+    - name: fcitx-chewing
+    - name: font-manager
+    - name: fonts-noto
+    - name: fonts-noto-cjk
+    - name: google-chrome-stable

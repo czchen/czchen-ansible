@@ -12,3 +12,4 @@
     - debian_repository
     - base
     - developer
+    - desktop
