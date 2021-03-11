@@ -46,7 +46,7 @@ prepare-krew:
 krew:
 	kubectl krew install ctx
 	kubectl krew install debug
-	kubectl krew install exec-cronjob
+	kubectl krew install flame
 	kubectl krew install graph
 	kubectl krew install grep
 	kubectl krew install iexec
