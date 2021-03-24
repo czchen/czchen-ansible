@@ -51,6 +51,7 @@ krew:
 	kubectl krew install grep
 	kubectl krew install iexec
 	kubectl krew install mtail
+	kubectl krew install neat
 	kubectl krew install ns
 	kubectl krew install popeye
 	kubectl krew install prune-unused

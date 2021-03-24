@@ -58,6 +58,7 @@
     - name: unattended-upgrades
     - name: vim-gtk  # For system clipboard
     - name: voltron
+    - name: wait-for-it
     - name: yadm
     - name: yamllint
     - name: yapf3
