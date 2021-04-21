@@ -108,7 +108,6 @@ define install-snap
 endef
 .PHONY: snap
 snap:
-	$(call install-snap,alacritty,--classic)
 	$(call install-snap,intellij-idea-ultimate,--classic)
 	$(call install-snap,kafkactl)
 	$(call install-snap,kontena-lens,--classic)
